@@ -4,29 +4,31 @@ import 'package:talawa/services/navigation_service.dart';
 import 'package:talawa/view_model/main_screen_view_model.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
-/// A lightweight implementation of [MainScreenViewModel] that only exposes
-/// the members needed by the app tour tests.
+// Trying out a simpler version of MainScreenViewModel just for testing the app tour
+// Mainly need to track tab taps and skip status
 class FakeMainScreenViewModel extends MainScreenViewModel {
   FakeMainScreenViewModel() : super();
 
-  /// Tracks the last tab index requested in [onTabTapped].
+  // Keep track of which tab was last tapped during tests
   int? lastTappedIndex;
-
-  /// Number of times [onTabTapped] has been invoked.
+  
+  // Count how many times tabs were tapped
   int tabTapCount = 0;
 
   @override
   void onTabTapped(int index) {
     lastTappedIndex = index;
     tabTapCount++;
+    
+    // Still call the parent method to maintain normal behavior
     super.onTabTapped(index);
   }
 }
 
-/// Fake controller used to guarantee the tutorial content builders always
-/// receive a non-null [TutorialCoachMarkController].
-class FakeTutorialCoachMarkController extends Fake
-    implements TutorialCoachMarkController {
+// This fake controller helps when we're building tutorial content
+// The real one would be null during tests, so this gives us something to work with
+class FakeTutorialCoachMarkController implements TutorialCoachMarkController {
+  // Track how many times each method gets called
   int nextCount = 0;
   int previousCount = 0;
   int skipCount = 0;
@@ -34,25 +36,39 @@ class FakeTutorialCoachMarkController extends Fake
   @override
   void next() {
     nextCount++;
+    print('Fake controller: next called ($nextCount times)'); // debug
   }
 
   @override
   void previous() {
     previousCount++;
+    print('Fake controller: previous called ($previousCount times)'); // debug
   }
 
   @override
   void skip() {
     skipCount++;
+    print('Fake controller: skip called ($skipCount times)'); // debug
   }
+
+  // TODO: Add proper Mockito annotations later if needed
+  // For now, this basic implementation works for our tests
 }
 
-/// Simple navigation service spy that records whether [pop] has been called.
+// Simple navigation service that just records when pop is called
+// We don't need the full navigation stack for these tests
 class FakeNavigationService extends NavigationService {
   bool popCalled = false;
 
   @override
   void pop() {
     popCalled = true;
+    print('Navigation pop called in fake service'); // debug
   }
+  
+  // Other methods we might need later...
+  // @override
+  // void pushScreen(String route) {
+  //   // implement when needed
+  // }
 }
