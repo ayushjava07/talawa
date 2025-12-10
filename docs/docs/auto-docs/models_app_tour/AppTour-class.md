@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [models/app_tour.dart](../models_app_tour/)
+3.  AppTour class
+
+
+AppTour
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # AppTour class
@@ -12,7 +30,7 @@ Class that handles all the apptour routines.
 
 ## Constructors
 
-[[AppTour](../models_app_tour/AppTour/AppTour.md)][]
+[[AppTour.new](../models_app_tour/AppTour/AppTour.md)][]
 
 :   
 
@@ -38,7 +56,7 @@ Class that handles all the apptour routines.
     no setterinherited
     :::
 
-[[tutorialCoachMark](../models_app_tour/AppTour/tutorialCoachMark.md)] [↔ [TutorialCoachMark](https://pub.dev/documentation/tutorial_coach_mark/1.2.12/tutorial_coach_mark/TutorialCoachMark-class.html)]
+[[tutorialCoachMark](../models_app_tour/AppTour/tutorialCoachMark.md)] [↔ [TutorialCoachMark](https://pub.dev/documentation/tutorial_coach_mark/1.3.3/tutorial_coach_mark/TutorialCoachMark-class.html)]
 :   instance of tutorialCoachMark.
     ::: features
     getter/setter pair
@@ -91,3 +109,6 @@ Class that handles all the apptour routines.
 
 
 
+
+
+ talawa 1.0.0+1 

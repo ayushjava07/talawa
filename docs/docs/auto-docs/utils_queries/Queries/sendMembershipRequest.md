@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [utils/queries.dart](../../utils_queries/)
+3.  [Queries](../../utils_queries/Queries-class.md)
+4.  sendMembershipRequest method
+
+
+sendMembershipRequest
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # sendMembershipRequest method
@@ -7,20 +26,13 @@
 
 
 [[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]
-sendMembershipRequest(
 
-1.  [[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)]
-    orgId]
-
-)
 
 
 
 mutation to send the member request.
 
-**params**:
-
--   `orgId`: refer org object
+**params**: None
 
 **returns**:
 
@@ -32,7 +44,7 @@ mutation to send the member request.
 ## Implementation
 
 ``` language-dart
-String sendMembershipRequest(String orgId) 
+String  
 ```
 
 
@@ -54,3 +66,6 @@ String sendMembershipRequest(String orgId)
 
 
 
+
+
+ talawa 1.0.0+1 

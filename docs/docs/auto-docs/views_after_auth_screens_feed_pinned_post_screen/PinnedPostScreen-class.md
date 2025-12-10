@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [views/after_auth_screens/feed/pinned_post_screen.dart](../views_after_auth_screens_feed_pinned_post_screen/)
+3.  PinnedPostScreen class
+
+
+PinnedPostScreen
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # PinnedPostScreen class
@@ -21,13 +39,13 @@ Inheritance
 
 Available extensions
 
-:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
 
 
 
 ## Constructors
 
-[[PinnedPostScreen](../views_after_auth_screens_feed_pinned_post_screen/PinnedPostScreen/PinnedPostScreen.md)][]
+[[PinnedPostScreen.new](../views_after_auth_screens_feed_pinned_post_screen/PinnedPostScreen/PinnedPostScreen.md)][]
 
 :   ::: 
     const
@@ -55,7 +73,7 @@ Available extensions
     finalinherited
     :::
 
-[[post](../views_after_auth_screens_feed_pinned_post_screen/PinnedPostScreen/post.md)] [→ [Map](https://api.flutter.dev/flutter/dart-core/Map-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)], [[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]]
+[[post](../views_after_auth_screens_feed_pinned_post_screen/PinnedPostScreen/post.md)] [→ [Post](../models_post_post_model/Post-class.md)]
 :   Contains the data of the post.
     ::: features
     final
@@ -71,18 +89,18 @@ Available extensions
 
 ## Methods
 
-[[animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)] ]
+[[animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)] ]
 
 :   Available on
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html),
     provided by the
-    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
     extension
 
     Wraps the target
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
     in an
-    [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)
+    [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)
     instance, and returns the instance for chaining calls. Ex.
     `myWidget.` is equivalent to `Animate(child: myWidget)`.
 
@@ -181,3 +199,6 @@ Available extensions
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [models/events/event_model.dart](../../models_events_event_model/)
+3.  [Attendee](../../models_events_event_model/Attendee-class.md)
+4.  firstName property
+
+
+firstName
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # firstName property
@@ -51,3 +70,6 @@ String? firstName;
 
 
 
+
+
+ talawa 1.0.0+1 

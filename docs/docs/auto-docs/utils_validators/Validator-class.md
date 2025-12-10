@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [utils/validators.dart](../utils_validators/)
+3.  Validator class
+
+
+Validator
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # Validator class
@@ -14,7 +32,7 @@ They are used to validate information given by the users.
 
 ## Constructors
 
-[Validator](../utils_validators/Validator/Validator.md)
+[Validator.new](../utils_validators/Validator/Validator.md)
 
 :   
 
@@ -76,11 +94,8 @@ They are used to validate information given by the users.
 [[validateEventTime](../utils_validators/Validator/validateEventTime.md)][([[[TimeOfDay](https://api.flutter.dev/flutter/material/TimeOfDay-class.md)] startTime, ][[[TimeOfDay](https://api.flutter.dev/flutter/material/TimeOfDay-class.html)] endTime]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?] ]
 :   Method to validate event time.
 
-[[validateFirstName](../utils_validators/Validator/validateFirstName.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] value]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?] ]
-:   Method to validate a user\'s first name.
-
-[[validateLastName](../utils_validators/Validator/validateLastName.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] value]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?] ]
-:   Method to validate a user\'s last name.
+[[validateName](../utils_validators/Validator/validateName.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] value]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?] ]
+:   Method to validate a user\'s name.
 
 [[validatePassword](../utils_validators/Validator/validatePassword.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] password]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?] ]
 :   Method to validate password.
@@ -109,3 +124,6 @@ They are used to validate information given by the users.
 
 
 
+
+
+ talawa 1.0.0+1 

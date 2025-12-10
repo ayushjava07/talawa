@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [models/post/post_model.dart](../../models_post_post_model/)
+3.  [Post](../../models_post_post_model/Post-class.md)
+4.  Post.fromJson factory constructor
+
+
+Post.fromJson
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # Post.fromJson constructor
@@ -32,7 +51,7 @@ params: None returns:
 /// None
 /// returns:
 /// * `PostObject`: Dart Object for posts
-Post.fromJson(Map<String, dynamic> json) 
+factory Post.fromJson(Map<String, dynamic> json) 
 ```
 
 
@@ -44,7 +63,7 @@ Post.fromJson(Map<String, dynamic> json)
 1.  [talawa](../../index.md)
 2.  [post_model](../../models_post_post_model/)
 3.  [Post](../../models_post_post_model/Post-class.md)
-4.  Post.fromJson constructor
+4.  Post.fromJson factory constructor
 
 ##### Post class
 
@@ -54,3 +73,6 @@ Post.fromJson(Map<String, dynamic> json)
 
 
 
+
+
+ talawa 1.0.0+1 

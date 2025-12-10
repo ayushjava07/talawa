@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [models/events/event_model.dart](../models_events_event_model/)
+3.  EventAdapter class
+
+
+EventAdapter
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # EventAdapter class
@@ -17,7 +35,7 @@ Inheritance
 
 ## Constructors
 
-[EventAdapter](../models_events_event_model/EventAdapter/EventAdapter.md)
+[EventAdapter.new](../models_events_event_model/EventAdapter/EventAdapter.md)
 
 :   
 
@@ -99,3 +117,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [views/after_auth_screens/chat/widgets/chat_message_bubble.dart](../views_after_auth_screens_chat_widgets_chat_message_bubble/)
+3.  Message class
+
+
+Message
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # Message class
@@ -7,6 +25,10 @@
 
 
 Message returns a widget for chat message in the bubble form.
+
+This widget displays a chat message in a bubble format with different
+styling for current user vs other users. It includes user avatars,
+message content, timestamps, and proper alignment based on the sender.
 
 
 
@@ -21,15 +43,15 @@ Inheritance
 
 Available extensions
 
-:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
 
 
 
 ## Constructors
 
-[[Message](../views_after_auth_screens_chat_widgets_chat_message_bubble/Message/Message.md)][]
-
-:   ::: 
+[[Message.new](../views_after_auth_screens_chat_widgets_chat_message_bubble/Message/Message.md)][]
+:   Creates a Message widget.
+    ::: 
     const
     :::
 
@@ -50,8 +72,8 @@ Available extensions
     :::
 
 [[message](../views_after_auth_screens_chat_widgets_chat_message_bubble/Message/Message.md)] [→ [ChatMessage](../models_chats_chat_message/ChatMessage-class.md)]
-
-:   ::: features
+:   The chat message to be displayed in the bubble.
+    ::: features
     final
     :::
 
@@ -65,18 +87,18 @@ Available extensions
 
 ## Methods
 
-[[animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)] ]
+[[animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)] ]
 
 :   Available on
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html),
     provided by the
-    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
     extension
 
     Wraps the target
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
     in an
-    [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)
+    [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)
     instance, and returns the instance for chaining calls. Ex.
     `myWidget.` is equivalent to `Animate(child: myWidget)`.
 
@@ -108,11 +130,18 @@ Available extensions
     inherited
     :::
 
+[[formatTime](../views_after_auth_screens_chat_widgets_chat_message_bubble/Message/formatTime.md)][([[[DateTime](https://api.flutter.dev/flutter/dart-core/DateTime-class.md)] dateTime]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+:   Formats the given DateTime into a human-readable time string for
+    chat messages.
+
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
 :   Invoked when a nonexistent method or property is accessed.
     ::: features
     inherited
     :::
+
+[[parseTimestamp](../views_after_auth_screens_chat_widgets_chat_message_bubble/Message/parseTimestamp.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] timestamp]) [→ [DateTime](https://api.flutter.dev/flutter/dart-core/DateTime-class.html)] ]
+:   Parses a timestamp string into a DateTime object.
 
 [[toDiagnosticsNode](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html)][ [→ [DiagnosticsNode](https://api.flutter.dev/flutter/foundation/DiagnosticsNode-class.html)] ]
 :   Returns a debug representation of the object that is used by
@@ -174,3 +203,6 @@ Available extensions
 
 
 
+
+
+ talawa 1.0.0+1 

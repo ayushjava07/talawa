@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/widgets_view_models/custom_drawer_view_model.dart](../view_model_widgets_view_models_custom_drawer_view_model/)
+3.  CustomDrawerViewModel class
+
+
+CustomDrawerViewModel
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # CustomDrawerViewModel class
@@ -29,7 +47,7 @@ Inheritance
 
 ## Constructors
 
-[CustomDrawerViewModel](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/CustomDrawerViewModel.md)
+[CustomDrawerViewModel.new](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/CustomDrawerViewModel.md)
 
 :   
 
@@ -41,6 +59,18 @@ Inheritance
 :   Scroll controller for managing scrolling behavior.
     ::: features
     final
+    :::
+
+[[error](../view_model_base_view_model/BaseModel/error.md)] [→ [AppError](../core_errors_app_error/AppError-class.md)?]
+:   Gets the current error, if any.
+    ::: features
+    no setterinherited
+    :::
+
+[[hasError](../view_model_base_view_model/BaseModel/hasError.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
+:   Returns true if there\'s an error.
+    ::: features
+    no setterinherited
     :::
 
 [[hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
@@ -56,8 +86,8 @@ Inheritance
     :::
 
 [[isBusy](../view_model_base_view_model/BaseModel/isBusy.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
-
-:   ::: features
+:   Returns true if the view model is currently busy.
+    ::: features
     no setterinherited
     :::
 
@@ -74,8 +104,8 @@ Inheritance
     :::
 
 [[state](../view_model_base_view_model/BaseModel/state.md)] [→ [ViewState](../enums_enums/ViewState.md)]
-
-:   ::: features
+:   Gets the current view state.
+    ::: features
     no setterinherited
     :::
 
@@ -85,13 +115,13 @@ Inheritance
     getter/setter pair
     :::
 
-[[targets](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/targets.md)] [→ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[TargetFocus](https://pub.dev/documentation/tutorial_coach_mark/1.2.12/tutorial_coach_mark/TargetFocus-class.html)]\>]]
+[[targets](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/targets.md)] [→ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[TargetFocus](https://pub.dev/documentation/tutorial_coach_mark/1.3.3/tutorial_coach_mark/TargetFocus-class.html)]\>]]
 :   List of TargetFocus objects used for tutorial coaching.
     ::: features
     final
     :::
 
-[[tutorialCoachMark](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/tutorialCoachMark.md)] [↔ [TutorialCoachMark](https://pub.dev/documentation/tutorial_coach_mark/1.2.12/tutorial_coach_mark/TutorialCoachMark-class.html)]
+[[tutorialCoachMark](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/tutorialCoachMark.md)] [↔ [TutorialCoachMark](https://pub.dev/documentation/tutorial_coach_mark/1.3.3/tutorial_coach_mark/TutorialCoachMark-class.html)]
 :   Instance of TutorialCoachMark responsible for providing tutorial
     guidance.
     ::: features
@@ -108,6 +138,12 @@ Inheritance
     inherited
     :::
 
+[clearError](../view_model_base_view_model/BaseModel/clearError.md) [→ void ]
+:   Clears the current error.
+    ::: features
+    inherited
+    :::
+
 [dispose](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/dispose.md) [→ void ]
 :   Discards any resources used by the object. After this is called, the
     object is not in a usable state and should be discarded (calls to
@@ -117,7 +153,13 @@ Inheritance
     override
     :::
 
-[[exitAlertDialog](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/exitAlertDialog.md)][ [→ [CustomAlertDialog](../widgets_custom_alert_dialog/CustomAlertDialog-class.md)] ]
+[[executeWithStateManagement](../view_model_base_view_model/BaseModel/executeWithStateManagement.md)]\<[T\>][([[[Future](https://api.flutter.dev/flutter/dart-core/Future-class.md)\<[T\>]] , ) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[T?\>]] ]
+:   Executes an async operation with automatic state management.
+    ::: features
+    inherited
+    :::
+
+[[exitAlertDialog](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/exitAlertDialog.md)][([[[BuildContext](https://api.flutter.dev/flutter/widgets/BuildContext-class.md)] context]) [→ [CustomAlertDialog](../widgets_custom_alert_dialog/CustomAlertDialog-class.md)] ]
 :   returns an exit alert dialog.
 
 [[initialize](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/initialize.md)][([[[MainScreenViewModel](../view_model_main_screen_view_model/MainScreenViewModel-class.md)] homeModel, ][[[BuildContext](https://api.flutter.dev/flutter/widgets/BuildContext-class.html)] context]) → void ]
@@ -145,12 +187,24 @@ Inheritance
     inherited
     :::
 
+[[setError](../view_model_base_view_model/BaseModel/setError.md)][([[[AppError](../core_errors_app_error/AppError-class.md)] error, ) → void ]
+:   Sets an error and updates the state.
+    ::: features
+    inherited
+    :::
+
+[[setLoading](../view_model_base_view_model/BaseModel/setLoading.md)][([[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.md)] isLoading]) → void ]
+:   Sets the loading state independently of view state.
+    ::: features
+    inherited
+    :::
+
 [[setSelectedOrganizationName](../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel/setSelectedOrganizationName.md)][([[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)] updatedOrganization]) → void ]
 :   This function switches the current organization to new organization.
 
 [[setState](../view_model_base_view_model/BaseModel/setState.md)][([[[ViewState](../enums_enums/ViewState.md)] viewState]) → void ]
-
-:   ::: features
+:   Sets the view state and notifies listeners.
+    ::: features
     inherited
     :::
 
@@ -192,3 +246,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

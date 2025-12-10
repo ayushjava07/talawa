@@ -1,6 +1,6 @@
-1.  [Constructors](./CustomAvatar-class.md)
-2.  [CustomAvatar](./CustomAvatar/CustomAvatar.md)
-3.  [Properties](./CustomAvatar-class.md)
+1.  [Constructors](./CustomAvatar-class#constructors.md)
+2.  [new](./CustomAvatar/CustomAvatar.md)
+3.  [Properties](./CustomAvatar-class#instance-properties.md)
 4.  [cacheManager](./CustomAvatar/cacheManager.md)
 5.  [firstAlphabet](./CustomAvatar/firstAlphabet.md)
 6.  [fontSize](./CustomAvatar/fontSize.md)
@@ -10,8 +10,8 @@
 10. [key](https://api.flutter.dev/flutter/widgets/Widget/key.html)
 11. [maxRadius](./CustomAvatar/maxRadius.md)
 12. [runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)
-13. [Methods](./CustomAvatar-class.md)
-14. [animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)
+13. [Methods](./CustomAvatar-class#instance-methods.md)
+14. [animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)
     ^(ext)^
 15. [build](./CustomAvatar/build.md)
 16. [createElement](https://api.flutter.dev/flutter/widgets/StatelessWidget/createElement.html)
@@ -23,6 +23,6 @@
 22. [toStringDeep](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html)
 23. [toStringShallow](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html)
 24. [toStringShort](https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html)
-25. [Operators](./CustomAvatar-class.md)
+25. [Operators](./CustomAvatar-class#operators.md)
 26. [operator
     ==](https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html)

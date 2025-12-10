@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [models/events/event_model.dart](../../models_events_event_model/)
+3.  [Event](../../models_events_event_model/Event-class.md)
+4.  attendees property
+
+
+attendees
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # attendees property
@@ -51,3 +70,6 @@ List<Attendee>? attendees;
 
 
 
+
+
+ talawa 1.0.0+1 

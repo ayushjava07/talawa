@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [models/caching/cached_user_action.dart](../models_caching_cached_user_action/)
+3.  CachedUserActionAdapter class
+
+
+CachedUserActionAdapter
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # CachedUserActionAdapter class
@@ -17,7 +35,7 @@ Inheritance
 
 ## Constructors
 
-[CachedUserActionAdapter](../models_caching_cached_user_action/CachedUserActionAdapter/CachedUserActionAdapter.md)
+[CachedUserActionAdapter.new](../models_caching_cached_user_action/CachedUserActionAdapter/CachedUserActionAdapter.md)
 
 :   
 
@@ -99,3 +117,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/widgets_view_models/comments_view_model.dart](../view_model_widgets_view_models_comments_view_model/)
+3.  CommentsViewModel class
+
+
+CommentsViewModel
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # CommentsViewModel class
@@ -28,7 +46,7 @@ Inheritance
 
 ## Constructors
 
-[CommentsViewModel](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/CommentsViewModel.md)
+[CommentsViewModel.new](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/CommentsViewModel.md)
 
 :   
 
@@ -40,6 +58,18 @@ Inheritance
 :   comment list getter.
     ::: features
     no setter
+    :::
+
+[[error](../view_model_base_view_model/BaseModel/error.md)] [→ [AppError](../core_errors_app_error/AppError-class.md)?]
+:   Gets the current error, if any.
+    ::: features
+    no setterinherited
+    :::
+
+[[hasError](../view_model_base_view_model/BaseModel/hasError.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
+:   Returns true if there\'s an error.
+    ::: features
+    no setterinherited
     :::
 
 [[hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
@@ -54,16 +84,29 @@ Inheritance
     no setterinherited
     :::
 
-[[isBusy](../view_model_base_view_model/BaseModel/isBusy.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
+[[hasNextPage](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/hasNextPage.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
+:   This function is used to get if there is a next page of comments
+    available.
+    ::: features
+    no setter
+    :::
 
-:   ::: features
+[[isBusy](../view_model_base_view_model/BaseModel/isBusy.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
+:   Returns true if the view model is currently busy.
+    ::: features
     no setterinherited
     :::
 
-[[postId](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/postId.md)] [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)]
-:   Id of current post.
+[[pageInfo](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/pageInfo.md)] [↔ [PageInfo](../models_page_info_page_info/PageInfo-class.md)]
+:   page Info of the current comments.
     ::: features
-    no setter
+    getter/setter pair
+    :::
+
+[[post](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/post.md)] [↔ [Post](../models_post_post_model/Post-class.md)]
+:   Post on which comments are to be fetched.
+    ::: features
+    getter/setter pair
     :::
 
 [[runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)] [→ [Type](https://api.flutter.dev/flutter/dart-core/Type-class.html)]
@@ -73,8 +116,8 @@ Inheritance
     :::
 
 [[state](../view_model_base_view_model/BaseModel/state.md)] [→ [ViewState](../enums_enums/ViewState.md)]
-
-:   ::: features
+:   Gets the current view state.
+    ::: features
     no setterinherited
     :::
 
@@ -82,7 +125,7 @@ Inheritance
 
 ## Methods
 
-[[addCommentLocally](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/addCommentLocally.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] msg]) → void ]
+[[addCommentLocally](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/addCommentLocally.md)][([[[Comment](../models_comment_comment_model/Comment-class.md)?] comment]) → void ]
 :   This function add comment locally.
 
 [[addListener](https://api.flutter.dev/flutter/foundation/ChangeNotifier/addListener.html)][([[[VoidCallback](https://api.flutter.dev/flutter/dart-ui/VoidCallback.md)] listener]) → void ]
@@ -91,11 +134,17 @@ Inheritance
     inherited
     :::
 
+[clearError](../view_model_base_view_model/BaseModel/clearError.md) [→ void ]
+:   Clears the current error.
+    ::: features
+    inherited
+    :::
+
 [[createComment](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/createComment.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] msg]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   This function add comment on the post. The function uses
     `createComments` method provided by Comment Service.
 
-[dispose](https://api.flutter.dev/flutter/foundation/ChangeNotifier/dispose.html) [→ void ]
+[dispose](../view_model_base_view_model/BaseModel/dispose.md) [→ void ]
 :   Discards any resources used by the object. After this is called, the
     object is not in a usable state and should be discarded (calls to
     [addListener](https://api.flutter.dev/flutter/foundation/ChangeNotifier/addListener.md)
@@ -104,10 +153,19 @@ Inheritance
     inherited
     :::
 
+[[executeWithStateManagement](../view_model_base_view_model/BaseModel/executeWithStateManagement.md)]\<[T\>][([[[Future](https://api.flutter.dev/flutter/dart-core/Future-class.md)\<[T\>]] , ) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[T?\>]] ]
+:   Executes an async operation with automatic state management.
+    ::: features
+    inherited
+    :::
+
+[[fetchNextPage](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/fetchNextPage.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+:   This function is used to fetch next page of comments if available.
+
 [[getComments](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/getComments.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   This function is used to get all comments on the post.
 
-[[initialise](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/initialise.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] postID]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+[[initialise](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/initialise.md)][([[[Post](../models_post_post_model/Post-class.md)] post]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   This function is used to initialise the CommentViewModel.
 
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
@@ -129,9 +187,21 @@ Inheritance
     inherited
     :::
 
-[[setState](../view_model_base_view_model/BaseModel/setState.md)][([[[ViewState](../enums_enums/ViewState.md)] viewState]) → void ]
+[[setError](../view_model_base_view_model/BaseModel/setError.md)][([[[AppError](../core_errors_app_error/AppError-class.md)] error, ) → void ]
+:   Sets an error and updates the state.
+    ::: features
+    inherited
+    :::
 
-:   ::: features
+[[setLoading](../view_model_base_view_model/BaseModel/setLoading.md)][([[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.md)] isLoading]) → void ]
+:   Sets the loading state independently of view state.
+    ::: features
+    inherited
+    :::
+
+[[setState](../view_model_base_view_model/BaseModel/setState.md)][([[[ViewState](../enums_enums/ViewState.md)] viewState]) → void ]
+:   Sets the view state and notifies listeners.
+    ::: features
     inherited
     :::
 
@@ -169,3 +239,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

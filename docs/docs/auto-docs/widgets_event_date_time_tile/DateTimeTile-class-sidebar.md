@@ -1,6 +1,6 @@
-1.  [Constructors](./DateTimeTile-class.md)
-2.  [DateTimeTile](./DateTimeTile/DateTimeTile.md)
-3.  [Properties](./DateTimeTile-class.md)
+1.  [Constructors](./DateTimeTile-class#constructors.md)
+2.  [new](./DateTimeTile/DateTimeTile.md)
+3.  [Properties](./DateTimeTile-class#instance-properties.md)
 4.  [date](./DateTimeTile/date.md)
 5.  [hashCode](https://api.flutter.dev/flutter/widgets/Widget/hashCode.html)
 6.  [isAllDay](./DateTimeTile/isAllDay.md)
@@ -9,8 +9,8 @@
 9.  [setDate](./DateTimeTile/setDate.md)
 10. [setTime](./DateTimeTile/setTime.md)
 11. [time](./DateTimeTile/time.md)
-12. [Methods](./DateTimeTile-class.md)
-13. [animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)
+12. [Methods](./DateTimeTile-class#instance-methods.md)
+13. [animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)
     ^(ext)^
 14. [build](./DateTimeTile/build.md)
 15. [createElement](https://api.flutter.dev/flutter/widgets/StatelessWidget/createElement.html)
@@ -22,6 +22,6 @@
 21. [toStringDeep](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html)
 22. [toStringShallow](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html)
 23. [toStringShort](https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html)
-24. [Operators](./DateTimeTile-class.md)
+24. [Operators](./DateTimeTile-class#operators.md)
 25. [operator
     ==](https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html)

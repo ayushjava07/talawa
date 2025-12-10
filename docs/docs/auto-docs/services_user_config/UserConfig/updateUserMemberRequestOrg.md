@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [services/user_config.dart](../../services_user_config/)
+3.  [UserConfig](../../services_user_config/UserConfig-class.md)
+4.  updateUserMemberRequestOrg method
+
+
+updateUserMemberRequestOrg
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # updateUserMemberRequestOrg method
@@ -9,7 +28,7 @@
 [[Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]]
 updateUserMemberRequestOrg(
 
-1.  [[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../../models_organization_org_info/OrgInfo-class.md)]\>]]
+1.  [[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]]
     orgDetails]
 
 )
@@ -29,7 +48,7 @@ Updates the user request to join the organization.
 ## Implementation
 
 ``` language-dart
-Future<void> updateUserMemberRequestOrg(List<OrgInfo> orgDetails) async 
+Future<void> updateUserMemberRequestOrg(List<String> orgDetails) async 
 ```
 
 
@@ -51,3 +70,6 @@ Future<void> updateUserMemberRequestOrg(List<OrgInfo> orgDetails) async
 
 
 
+
+
+ talawa 1.0.0+1 

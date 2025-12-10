@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [services/user_config.dart](../services_user_config/)
+3.  UserConfig class
+
+
+UserConfig
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # UserConfig class
@@ -26,7 +44,7 @@ Services include:
 
 ## Constructors
 
-[UserConfig](../services_user_config/UserConfig/UserConfig.md)
+[UserConfig.new](../services_user_config/UserConfig/UserConfig.md)
 
 :   
 
@@ -87,6 +105,10 @@ Services include:
 
 ## Methods
 
+[[exitCurrentOrg](../services_user_config/UserConfig/exitCurrentOrg.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+:   Executes an API call with error handling to exit current joined
+    organization.
+
 [initialiseStream](../services_user_config/UserConfig/initialiseStream.md) [→ void ]
 :   initialise.
 
@@ -95,6 +117,9 @@ Services include:
     ::: features
     inherited
     :::
+
+[[performLogout](../services_user_config/UserConfig/performLogout.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[QueryResult](https://pub.dev/documentation/graphql/5.2.3/graphql/QueryResult-class.html)[\<[[Object](https://api.flutter.dev/flutter/dart-core/Object-class.html)?]\>]]\>]] ]
+:   Performs client-side logout
 
 [[saveCurrentOrgInHive](../services_user_config/UserConfig/saveCurrentOrgInHive.md)][([[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)] saveOrgAsCurrent]) → void ]
 :   save current organization details in hive.
@@ -114,16 +139,10 @@ Services include:
 [[updateUser](../services_user_config/UserConfig/updateUser.md)][([[[User](../models_user_user_info/User-class.md)] updatedUserDetails]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]\>]] ]
 :   Updates the user details.
 
-[[updateUserAdminOrg](../services_user_config/UserConfig/updateUserAdminOrg.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]] orgDetails]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
-:   Updates the organization admin.
-
-[[updateUserCreatedOrg](../services_user_config/UserConfig/updateUserCreatedOrg.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]] orgDetails]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
-:   Updates the user created organization.
-
-[[updateUserJoinedOrg](../services_user_config/UserConfig/updateUserJoinedOrg.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]] orgDetails]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+[[updateUserJoinedOrg](../services_user_config/UserConfig/updateUserJoinedOrg.md)][([[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)] orgDetails]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   Updates the user joined organization.
 
-[[updateUserMemberRequestOrg](../services_user_config/UserConfig/updateUserMemberRequestOrg.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]] orgDetails]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+[[updateUserMemberRequestOrg](../services_user_config/UserConfig/updateUserMemberRequestOrg.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]] orgDetails]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   Updates the user request to join the organization.
 
 [[userLoggedIn](../services_user_config/UserConfig/userLoggedIn.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]\>]] ]
@@ -160,3 +179,6 @@ Services include:
 
 
 
+
+
+ talawa 1.0.0+1 

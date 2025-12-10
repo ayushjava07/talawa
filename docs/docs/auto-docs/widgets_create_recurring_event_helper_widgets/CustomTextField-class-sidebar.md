@@ -1,6 +1,6 @@
-1.  [Constructors](./CustomTextField-class.md)
-2.  [CustomTextField](./CustomTextField/CustomTextField.md)
-3.  [Properties](./CustomTextField-class.md)
+1.  [Constructors](./CustomTextField-class#constructors.md)
+2.  [new](./CustomTextField/CustomTextField.md)
+3.  [Properties](./CustomTextField-class#instance-properties.md)
 4.  [enabled](./CustomTextField/enabled.md)
 5.  [hashCode](https://api.flutter.dev/flutter/widgets/Widget/hashCode.html)
 6.  [key](https://api.flutter.dev/flutter/widgets/Widget/key.html)
@@ -8,8 +8,8 @@
 8.  [readOnly](./CustomTextField/readOnly.md)
 9.  [runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)
 10. [textEditingController](./CustomTextField/textEditingController.md)
-11. [Methods](./CustomTextField-class.md)
-12. [animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)
+11. [Methods](./CustomTextField-class#instance-methods.md)
+12. [animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)
     ^(ext)^
 13. [build](./CustomTextField/build.md)
 14. [createElement](https://api.flutter.dev/flutter/widgets/StatelessWidget/createElement.html)
@@ -21,6 +21,6 @@
 20. [toStringDeep](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html)
 21. [toStringShallow](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html)
 22. [toStringShort](https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html)
-23. [Operators](./CustomTextField-class.md)
+23. [Operators](./CustomTextField-class#operators.md)
 24. [operator
     ==](https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html)

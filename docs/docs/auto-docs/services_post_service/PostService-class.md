@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [services/post_service.dart](../services_post_service/)
+3.  PostService class
+
+
+PostService
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # PostService class
@@ -11,8 +29,6 @@ PostService class provides functions in the context of a Post.
 Services include:
 
 -   `getPosts` : to get all posts of the organization.
--   `addLike` : to add like to the post.
--   `removeLike` : to remove the like from the post.
 
 
 
@@ -27,7 +43,7 @@ Inheritance
 
 ## Constructors
 
-[PostService](../services_post_service/PostService/PostService.md)
+[PostService.new](../services_post_service/PostService/PostService.md)
 
 :   
 
@@ -36,14 +52,14 @@ Inheritance
 ## Properties
 
 [[after](../services_post_service/PostService/after.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
-
-:   ::: features
+:   `after` is used to fetch posts after a certain cursor.
+    ::: features
     getter/setter pair
     :::
 
 [[before](../services_post_service/PostService/before.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
-
-:   ::: features
+:   `before` is used to fetch posts before a certain cursor.
+    ::: features
     getter/setter pair
     :::
 
@@ -53,9 +69,16 @@ Inheritance
     finalinherited
     :::
 
-[[first](../services_post_service/PostService/first.md)] [↔ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)?]
+[[currentOrg](../services_post_service/PostService/currentOrg.md)] [→ [OrgInfo](../models_organization_org_info/OrgInfo-class.md)]
+:   Getter for the current organization.
+    ::: features
+    no setter
+    :::
 
-:   ::: features
+[[first](../services_post_service/PostService/first.md)] [↔ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)?]
+:   `first` is used to limit the number of posts fetched in a single
+    request.
+    ::: features
     getter/setter pair
     :::
 
@@ -66,15 +89,23 @@ Inheritance
     :::
 
 [[last](../services_post_service/PostService/last.md)] [↔ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)?]
-
-:   ::: features
+:   `last` is used to limit the number of posts fetched in a single
+    request from the end.
+    ::: features
     getter/setter pair
     :::
 
-[[postInfo](../services_post_service/PostService/postInfo.md)] [↔ [Map](https://api.flutter.dev/flutter/dart-core/Map-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)], dynamic\>]?]
-
-:   ::: features
+[[pageInfo](../services_post_service/PostService/pageInfo.md)] [↔ [PageInfo](../models_page_info_page_info/PageInfo-class.md)]
+:   Object to hold pagination information for posts. It contains
+    information like `after`, `before`, `first`, and `last`.
+    ::: features
     getter/setter pair
+    :::
+
+[[posts](../services_post_service/PostService/posts.md)] [→ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[Post](../models_post_post_model/Post-class.md)]\>]]
+:   Getter for the list of posts.
+    ::: features
+    no setter
     :::
 
 [[postStream](../services_post_service/PostService/postStream.md)] [→ [Stream](https://api.flutter.dev/flutter/dart-core/Stream-class.html)[\<[[List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[Post](../models_post_post_model/Post-class.md)]\>]]\>]]
@@ -99,19 +130,15 @@ Inheritance
 
 ## Methods
 
-[[addCommentLocally](../services_post_service/PostService/addCommentLocally.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] postID]) → void ]
+[[addCommentLocally](../services_post_service/PostService/addCommentLocally.md)][([[[Post](../models_post_post_model/Post-class.md)] post]) → void ]
 :   Method to add comment of a user and update comments using updated
     Post Stream.
-
-[[addLike](../services_post_service/PostService/addLike.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] postID]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]\>]] ]
-:   Method to add like on a Post.
 
 [[addNewpost](../services_post_service/PostService/addNewpost.md)][([[[Post](../models_post_post_model/Post-class.md)] newPost]) → void ]
 :   Method to add newly created post at the very top of the feed.
 
-[[deletePost](../services_post_service/PostService/deletePost.md)][([[[Post](../models_post_post_model/Post-class.md)] post]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[QueryResult](https://pub.dev/documentation/graphql/5.2.0-beta.9/graphql/QueryResult-class.html)[\<[[Object](https://api.flutter.dev/flutter/dart-core/Object-class.html)?]\>]]\>]] ]
-
-:   
+[[deletePost](../services_post_service/PostService/deletePost.md)][([[[Post](../models_post_post_model/Post-class.md)] post]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[QueryResult](https://pub.dev/documentation/graphql/5.2.3/graphql/QueryResult-class.html)[\<[[Object](https://api.flutter.dev/flutter/dart-core/Object-class.html)?]\>]]\>]] ]
+:   Method to delete a post from the feed.
 
 [[fetchDataFromApi](../services_post_service/PostService/fetchDataFromApi.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[Post](../models_post_post_model/Post-class.md)]\>]]\>]] ]
 :   Abstract method to be implemented by subclasses to fetch data from
@@ -121,8 +148,7 @@ Inheritance
     :::
 
 [[fetchPostsInitial](../services_post_service/PostService/fetchPostsInitial.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
-
-:   
+:   Method to load cached data from Hive database.
 
 [[getNewFeedAndRefreshCache](../services_caching_base_feed_manager/BaseFeedManager/getNewFeedAndRefreshCache.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[Post](../models_post_post_model/Post-class.md)]\>]]\>]] ]
 :   Fetches new data from the API if online, updates the cache, and
@@ -130,9 +156,6 @@ Inheritance
     ::: features
     inherited
     :::
-
-[[getPosts](../services_post_service/PostService/getPosts.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
-:   Method used to fetch all posts of the current organisation.
 
 [[loadCachedData](../services_caching_base_feed_manager/BaseFeedManager/loadCachedData.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[Post](../models_post_post_model/Post-class.md)]\>]]\>]] ]
 :   Loads the data cached in Hive.
@@ -149,14 +172,8 @@ Inheritance
     inherited
     :::
 
-[[previousPage](../services_post_service/PostService/previousPage.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
-:   Method to handle pagination by fetching previous page of posts.
-
 [[refreshFeed](../services_post_service/PostService/refreshFeed.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   Method to refresh feed of current selected organisation.
-
-[[removeLike](../services_post_service/PostService/removeLike.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] postID]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]\>]] ]
-:   Method to remove like in a Post.
 
 [[saveDataToCache](../services_caching_base_feed_manager/BaseFeedManager/saveDataToCache.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[Post](../models_post_post_model/Post-class.md)]\>]] data]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   Saves a list of data to the cache, replacing any existing data.
@@ -167,6 +184,12 @@ Inheritance
 [setOrgStreamSubscription](../services_post_service/PostService/setOrgStreamSubscription.md) [→ void ]
 :   This method sets up a stream that constantly listens to change in
     current org.
+
+[[toggleDownVote](../services_post_service/PostService/toggleDownVote.md)][([[[Post](../models_post_post_model/Post-class.md)] post]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+:   Method to toggle downvote on a post.
+
+[[toggleUpVote](../services_post_service/PostService/toggleUpVote.md)][([[[Post](../models_post_post_model/Post-class.md)] post]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+:   Method to toggle upvote on a post.
 
 [[toString](https://api.flutter.dev/flutter/dart-core/Object/toString.html)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   A string representation of this object.
@@ -202,3 +225,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [services/hive_manager.dart](../services_hive_manager/)
+3.  HiveManager class
+
+
+HiveManager
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # HiveManager class
@@ -18,7 +36,7 @@ when they are no longer needed.
 
 ## Constructors
 
-[HiveManager](../services_hive_manager/HiveManager/HiveManager.md)
+[HiveManager.new](../services_hive_manager/HiveManager/HiveManager.md)
 
 :   
 
@@ -105,3 +123,6 @@ when they are no longer needed.
 
 
 
+
+
+ talawa 1.0.0+1 

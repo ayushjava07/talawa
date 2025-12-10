@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [enums/enums.dart](../enums_enums/)
+3.  CachedOperationTypeAdapter class
+
+
+CachedOperationTypeAdapter
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # CachedOperationTypeAdapter class
@@ -17,7 +35,7 @@ Inheritance
 
 ## Constructors
 
-[CachedOperationTypeAdapter](../enums_enums/CachedOperationTypeAdapter/CachedOperationTypeAdapter.md)
+[CachedOperationTypeAdapter.new](../enums_enums/CachedOperationTypeAdapter/CachedOperationTypeAdapter.md)
 
 :   
 
@@ -99,3 +117,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

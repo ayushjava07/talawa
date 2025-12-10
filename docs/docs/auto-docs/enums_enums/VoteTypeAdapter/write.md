@@ -1,0 +1,81 @@
+
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [enums/enums.dart](../../enums_enums/)
+3.  [VoteTypeAdapter](../../enums_enums/VoteTypeAdapter-class.md)
+4.  write method
+
+
+write
+
+
+ dark_mode   light_mode 
+
+
+
+
+<div>
+
+# write method
+
+</div>
+
+
+<div>
+
+1.  @[override](https://api.flutter.dev/flutter/dart-core/override-constant.html)
+
+</div>
+
+void write(
+
+1.  [[[BinaryWriter](https://pub.dev/documentation/hive/2.2.3/hive/BinaryWriter-class.md)]
+    writer, ]
+2.  [[[VoteType](../../enums_enums/VoteType.md)]
+    obj]
+
+)
+
+
+override
+
+
+
+
+Is called when a value has to be encoded.
+
+
+
+## Implementation
+
+``` language-dart
+@override
+void write(BinaryWriter writer, VoteType obj) 
+```
+
+
+
+
+
+
+
+1.  [talawa](../../index.md)
+2.  [enums](../../enums_enums/)
+3.  [VoteTypeAdapter](../../enums_enums/VoteTypeAdapter-class.md)
+4.  write method
+
+##### VoteTypeAdapter class
+
+
+
+
+
+
+
+
+
+ talawa 1.0.0+1 

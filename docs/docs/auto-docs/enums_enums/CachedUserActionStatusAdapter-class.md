@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [enums/enums.dart](../enums_enums/)
+3.  CachedUserActionStatusAdapter class
+
+
+CachedUserActionStatusAdapter
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # CachedUserActionStatusAdapter class
@@ -17,7 +35,7 @@ Inheritance
 
 ## Constructors
 
-[CachedUserActionStatusAdapter](../enums_enums/CachedUserActionStatusAdapter/CachedUserActionStatusAdapter.md)
+[CachedUserActionStatusAdapter.new](../enums_enums/CachedUserActionStatusAdapter/CachedUserActionStatusAdapter.md)
 
 :   
 
@@ -99,3 +117,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

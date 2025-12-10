@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [models/app_tour.dart](../../models_app_tour/)
+3.  [FocusTarget](../../models_app_tour/FocusTarget-class.md)
+4.  focusWidget property
+
+
+focusWidget
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # focusWidget property
@@ -6,7 +25,7 @@
 </div>
 
 
-[TargetFocus](https://pub.dev/documentation/tutorial_coach_mark/1.2.12/tutorial_coach_mark/TargetFocus-class.html)
+[TargetFocus](https://pub.dev/documentation/tutorial_coach_mark/1.3.3/tutorial_coach_mark/TargetFocus-class.html)
 focusWidget
 
 
@@ -44,3 +63,6 @@ late TargetFocus focusWidget;
 
 
 
+
+
+ talawa 1.0.0+1 

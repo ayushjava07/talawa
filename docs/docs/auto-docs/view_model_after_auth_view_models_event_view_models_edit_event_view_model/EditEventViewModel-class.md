@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/after_auth_view_models/event_view_models/edit_event_view_model.dart](../view_model_after_auth_view_models_event_view_models_edit_event_view_model/)
+3.  EditEventViewModel class
+
+
+EditEventViewModel
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # EditEventViewModel class
@@ -28,7 +46,7 @@ Inheritance
 
 ## Constructors
 
-[EditEventViewModel](../view_model_after_auth_view_models_event_view_models_edit_event_view_model/EditEventViewModel/EditEventViewModel.md)
+[EditEventViewModel.new](../view_model_after_auth_view_models_event_view_models_edit_event_view_model/EditEventViewModel/EditEventViewModel.md)
 
 :   
 
@@ -41,6 +59,12 @@ Inheritance
     field.
     ::: features
     getter/setter pair
+    :::
+
+[[error](../view_model_base_view_model/BaseModel/error.md)] [→ [AppError](../core_errors_app_error/AppError-class.md)?]
+:   Gets the current error, if any.
+    ::: features
+    no setterinherited
     :::
 
 [[eventDescriptionTextController](../view_model_after_auth_view_models_event_view_models_edit_event_view_model/EditEventViewModel/eventDescriptionTextController.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
@@ -93,6 +117,12 @@ Inheritance
     final
     :::
 
+[[hasError](../view_model_base_view_model/BaseModel/hasError.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
+:   Returns true if there\'s an error.
+    ::: features
+    no setterinherited
+    :::
+
 [[hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
 :   The hash code for this object.
     ::: features
@@ -106,8 +136,8 @@ Inheritance
     :::
 
 [[isBusy](../view_model_base_view_model/BaseModel/isBusy.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
-
-:   ::: features
+:   Returns true if the view model is currently busy.
+    ::: features
     no setterinherited
     :::
 
@@ -138,8 +168,8 @@ Inheritance
     :::
 
 [[state](../view_model_base_view_model/BaseModel/state.md)] [→ [ViewState](../enums_enums/ViewState.md)]
-
-:   ::: features
+:   Gets the current view state.
+    ::: features
     no setterinherited
     :::
 
@@ -165,11 +195,23 @@ Inheritance
     inherited
     :::
 
-[dispose](https://api.flutter.dev/flutter/foundation/ChangeNotifier/dispose.html) [→ void ]
+[clearError](../view_model_base_view_model/BaseModel/clearError.md) [→ void ]
+:   Clears the current error.
+    ::: features
+    inherited
+    :::
+
+[dispose](../view_model_base_view_model/BaseModel/dispose.md) [→ void ]
 :   Discards any resources used by the object. After this is called, the
     object is not in a usable state and should be discarded (calls to
     [addListener](https://api.flutter.dev/flutter/foundation/ChangeNotifier/addListener.md)
     will throw after the object is disposed).
+    ::: features
+    inherited
+    :::
+
+[[executeWithStateManagement](../view_model_base_view_model/BaseModel/executeWithStateManagement.md)]\<[T\>][([[[Future](https://api.flutter.dev/flutter/dart-core/Future-class.md)\<[T\>]] , ) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[T?\>]] ]
+:   Executes an async operation with automatic state management.
     ::: features
     inherited
     :::
@@ -196,9 +238,21 @@ Inheritance
     inherited
     :::
 
-[[setState](../view_model_base_view_model/BaseModel/setState.md)][([[[ViewState](../enums_enums/ViewState.md)] viewState]) → void ]
+[[setError](../view_model_base_view_model/BaseModel/setError.md)][([[[AppError](../core_errors_app_error/AppError-class.md)] error, ) → void ]
+:   Sets an error and updates the state.
+    ::: features
+    inherited
+    :::
 
-:   ::: features
+[[setLoading](../view_model_base_view_model/BaseModel/setLoading.md)][([[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.md)] isLoading]) → void ]
+:   Sets the loading state independently of view state.
+    ::: features
+    inherited
+    :::
+
+[[setState](../view_model_base_view_model/BaseModel/setState.md)][([[[ViewState](../enums_enums/ViewState.md)] viewState]) → void ]
+:   Sets the view state and notifies listeners.
+    ::: features
     inherited
     :::
 
@@ -239,3 +293,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

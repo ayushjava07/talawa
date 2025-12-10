@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [services/comment_service.dart](../services_comment_service/)
+3.  CommentService class
+
+
+CommentService
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # CommentService class
@@ -18,7 +36,7 @@ Services include:
 
 ## Constructors
 
-[CommentService](../services_comment_service/CommentService/CommentService.md)
+[CommentService.new](../services_comment_service/CommentService/CommentService.md)
 
 :   
 
@@ -42,17 +60,23 @@ Services include:
 
 ## Methods
 
-[[createComments](../services_comment_service/CommentService/createComments.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] postId, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)] text]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+[[createComments](../services_comment_service/CommentService/createComments.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] postId, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)] body]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[Comment](../models_comment_comment_model/Comment-class.md)?]\>]] ]
 :   This function is used to add comment on the post.
 
-[[getCommentsForPost](../services_comment_service/CommentService/getCommentsForPost.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] postId]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[List](https://api.flutter.dev/flutter/dart-core/List-class.html)]\>]] ]
-:   This function is used to get all comments on the post.
+[[getCommentsForPost](../services_comment_service/CommentService/getCommentsForPost.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[Map](https://api.flutter.dev/flutter/dart-core/Map-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)], dynamic\>]]\>]] ]
+:   This function is used to get comments on the post.
 
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
 :   Invoked when a nonexistent method or property is accessed.
     ::: features
     inherited
     :::
+
+[[toggleDownVoteComment](../services_comment_service/CommentService/toggleDownVoteComment.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] commentId, ][[[VoteType](../enums_enums/VoteType.md)?] currentVoteType, ][[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)] hasVoted]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+:   This function is used to toggle downvote on a comment.
+
+[[toggleUpVoteComment](../services_comment_service/CommentService/toggleUpVoteComment.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] commentId, ][[[VoteType](../enums_enums/VoteType.md)?] currentVoteType, ][[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)] hasVoted]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+:   This function is used to toggle upvote on a comment.
 
 [[toString](https://api.flutter.dev/flutter/dart-core/Object/toString.html)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   A string representation of this object.
@@ -88,3 +112,6 @@ Services include:
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/pre_auth_view_models/signup_details_view_model.dart](../view_model_pre_auth_view_models_signup_details_view_model/)
+3.  SignupDetailsViewModel class
+
+
+SignupDetailsViewModel
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # SignupDetailsViewModel class
@@ -27,7 +45,7 @@ Inheritance
 
 ## Constructors
 
-[SignupDetailsViewModel](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/SignupDetailsViewModel.md)
+[SignupDetailsViewModel.new](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/SignupDetailsViewModel.md)
 
 :   
 
@@ -54,10 +72,10 @@ Inheritance
     getter/setter pair
     :::
 
-[[firstName](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/firstName.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
-:   TextEditingController for handling first name input field.
+[[error](../view_model_base_view_model/BaseModel/error.md)] [→ [AppError](../core_errors_app_error/AppError-class.md)?]
+:   Gets the current error, if any.
     ::: features
-    getter/setter pair
+    no setterinherited
     :::
 
 [[formKey](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/formKey.md)] [→ [GlobalKey](https://api.flutter.dev/flutter/widgets/GlobalKey-class.html)[\<[[FormState](https://api.flutter.dev/flutter/widgets/FormState-class.html)]\>]]
@@ -71,6 +89,12 @@ Inheritance
     represented by a map with String keys and dynamic values.
     ::: features
     getter/setter pair
+    :::
+
+[[hasError](../view_model_base_view_model/BaseModel/hasError.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
+:   Returns true if there\'s an error.
+    ::: features
+    no setterinherited
     :::
 
 [[hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
@@ -93,13 +117,13 @@ Inheritance
     :::
 
 [[isBusy](../view_model_base_view_model/BaseModel/isBusy.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
-
-:   ::: features
+:   Returns true if the view model is currently busy.
+    ::: features
     no setterinherited
     :::
 
-[[lastName](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/lastName.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
-:   TextEditingController for handling last name input field.
+[[name](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/name.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
+:   TextEditingController for handling name input field.
     ::: features
     getter/setter pair
     :::
@@ -122,15 +146,15 @@ Inheritance
     getter/setter pair
     :::
 
-[[selectedOrganization](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/selectedOrganization.md)] [↔ [OrgInfo](../models_organization_org_info/OrgInfo-class.md)?]
+[[selectedOrganization](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/selectedOrganization.md)] [↔ [OrgInfo](../models_organization_org_info/OrgInfo-class.md)]
 :   Represents information about the selected organization.
     ::: features
     getter/setter pair
     :::
 
 [[state](../view_model_base_view_model/BaseModel/state.md)] [→ [ViewState](../enums_enums/ViewState.md)]
-
-:   ::: features
+:   Gets the current view state.
+    ::: features
     no setterinherited
     :::
 
@@ -151,7 +175,13 @@ Inheritance
     inherited
     :::
 
-[dispose](https://api.flutter.dev/flutter/foundation/ChangeNotifier/dispose.html) [→ void ]
+[clearError](../view_model_base_view_model/BaseModel/clearError.md) [→ void ]
+:   Clears the current error.
+    ::: features
+    inherited
+    :::
+
+[dispose](../view_model_base_view_model/BaseModel/dispose.md) [→ void ]
 :   Discards any resources used by the object. After this is called, the
     object is not in a usable state and should be discarded (calls to
     [addListener](https://api.flutter.dev/flutter/foundation/ChangeNotifier/addListener.md)
@@ -160,7 +190,13 @@ Inheritance
     inherited
     :::
 
-[[initialise](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/initialise.md)][([[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)?] org]) → void ]
+[[executeWithStateManagement](../view_model_base_view_model/BaseModel/executeWithStateManagement.md)]\<[T\>][([[[Future](https://api.flutter.dev/flutter/dart-core/Future-class.md)\<[T\>]] , ) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[T?\>]] ]
+:   Executes an async operation with automatic state management.
+    ::: features
+    inherited
+    :::
+
+[[initialise](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/initialise.md)][([[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)] org]) → void ]
 :   Initializes the greeting message for a selected organization.
 
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
@@ -182,9 +218,21 @@ Inheritance
     inherited
     :::
 
-[[setState](../view_model_base_view_model/BaseModel/setState.md)][([[[ViewState](../enums_enums/ViewState.md)] viewState]) → void ]
+[[setError](../view_model_base_view_model/BaseModel/setError.md)][([[[AppError](../core_errors_app_error/AppError-class.md)] error, ) → void ]
+:   Sets an error and updates the state.
+    ::: features
+    inherited
+    :::
 
-:   ::: features
+[[setLoading](../view_model_base_view_model/BaseModel/setLoading.md)][([[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.md)] isLoading]) → void ]
+:   Sets the loading state independently of view state.
+    ::: features
+    inherited
+    :::
+
+[[setState](../view_model_base_view_model/BaseModel/setState.md)][([[[ViewState](../enums_enums/ViewState.md)] viewState]) → void ]
+:   Sets the view state and notifies listeners.
+    ::: features
     inherited
     :::
 
@@ -228,3 +276,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

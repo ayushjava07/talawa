@@ -1,0 +1,6 @@
+1.  [Classes](./#classes)
+2.  [Failure](./Failure-class.md)
+3.  [Result](./Result-class.md)
+4.  [Success](./Success-class.md)
+5.  [Extensions](./#extensions)
+6.  [ResultExtensions](./ResultExtensions.md)

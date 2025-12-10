@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [views/demo_screens/organization_feed_demo.dart](../views_demo_screens_organization_feed_demo/)
+3.  DemoOrganizationFeed class
+
+
+DemoOrganizationFeed
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # DemoOrganizationFeed class
@@ -22,13 +40,13 @@ Inheritance
 
 Available extensions
 
-:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
 
 
 
 ## Constructors
 
-[[DemoOrganizationFeed](../views_demo_screens_organization_feed_demo/DemoOrganizationFeed/DemoOrganizationFeed.md)][]
+[[DemoOrganizationFeed.new](../views_demo_screens_organization_feed_demo/DemoOrganizationFeed/DemoOrganizationFeed.md)][]
 
 :   ::: 
     const
@@ -72,18 +90,18 @@ Available extensions
 
 ## Methods
 
-[[animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)] ]
+[[animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)] ]
 
 :   Available on
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html),
     provided by the
-    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
     extension
 
     Wraps the target
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
     in an
-    [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)
+    [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)
     instance, and returns the instance for chaining calls. Ex.
     `myWidget.` is equivalent to `Animate(child: myWidget)`.
 
@@ -168,10 +186,13 @@ Available extensions
 
 
 
-## Constants
+## Static Properties
 
-[[pinnedPosts](../views_demo_screens_organization_feed_demo/DemoOrganizationFeed/pinnedPosts-constant.md)] [→ const [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[Map](https://api.flutter.dev/flutter/dart-core/Map-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)], [[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]]\>]]
+[[pinnedPosts](../views_demo_screens_organization_feed_demo/DemoOrganizationFeed/pinnedPosts.md)] [↔ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[Post](../models_post_post_model/Post-class.md)]\>]]
 :   List of dummy pinned posts.
+    ::: features
+    getter/setter pair
+    :::
 
 
 
@@ -191,3 +212,6 @@ Available extensions
 
 
 
+
+
+ talawa 1.0.0+1 

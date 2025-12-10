@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [widgets/post_container.dart](../widgets_post_container/)
+3.  PostContainer class
+
+
+PostContainer
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # PostContainer class
@@ -6,7 +24,7 @@
 </div>
 
 
-the widget which contains the actual image.
+Actual widget where files(images/videos) are displayed in a post.
 
 
 
@@ -21,13 +39,13 @@ Inheritance
 
 Available extensions
 
-:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
 
 
 
 ## Constructors
 
-[[PostContainer](../widgets_post_container/PostContainer/PostContainer.md)][]
+[[PostContainer.new](../widgets_post_container/PostContainer/PostContainer.md)][]
 
 :   ::: 
     const
@@ -36,6 +54,12 @@ Available extensions
 
 
 ## Properties
+
+[[fileAttachmentList](../widgets_post_container/PostContainer/fileAttachmentList.md)] [→ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[AttachmentModel](../models_attachments_attachment_model/AttachmentModel-class.md)]\>]?]
+:   Attachments of a post.
+    ::: features
+    final
+    :::
 
 [[hashCode](https://api.flutter.dev/flutter/widgets/Widget/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
 :   The hash code for this object.
@@ -49,12 +73,6 @@ Available extensions
     finalinherited
     :::
 
-[[photoUrl](../widgets_post_container/PostContainer/photoUrl.md)] [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
-:   image url.
-    ::: features
-    final
-    :::
-
 [[runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)] [→ [Type](https://api.flutter.dev/flutter/dart-core/Type-class.html)]
 :   A representation of the runtime type of the object.
     ::: features
@@ -65,18 +83,18 @@ Available extensions
 
 ## Methods
 
-[[animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)] ]
+[[animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)] ]
 
 :   Available on
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html),
     provided by the
-    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
     extension
 
     Wraps the target
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
     in an
-    [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)
+    [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)
     instance, and returns the instance for chaining calls. Ex.
     `myWidget.` is equivalent to `Animate(child: myWidget)`.
 
@@ -88,7 +106,7 @@ Available extensions
     inherited
     :::
 
-[[createState](../widgets_post_container/PostContainer/createState.md)][ [→ [PostContainerState](../widgets_post_container/PostContainerState-class.md)] ]
+[[createState](../widgets_post_container/PostContainer/createState.md)][ [→ [State](https://api.flutter.dev/flutter/widgets/State-class.html)[\<[[PostContainer](../widgets_post_container/PostContainer-class.md)]\>]] ]
 :   Creates the mutable state for this widget at a given location in the
     tree.
     ::: features
@@ -175,3 +193,6 @@ Available extensions
 
 
 
+
+
+ talawa 1.0.0+1 

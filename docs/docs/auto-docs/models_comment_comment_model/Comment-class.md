@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [models/comment/comment_model.dart](../models_comment_comment_model/)
+3.  Comment class
+
+
+Comment
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # Comment class
@@ -20,7 +38,7 @@ Annotations
 
 ## Constructors
 
-[[Comment](../models_comment_comment_model/Comment/Comment.md)][]
+[[Comment.new](../models_comment_comment_model/Comment/Comment.md)][]
 
 :   
 
@@ -34,6 +52,12 @@ Annotations
 
 ## Properties
 
+[[body](../models_comment_comment_model/Comment/body.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
+:   The text of the comment.
+    ::: features
+    getter/setter pair
+    :::
+
 [[createdAt](../models_comment_comment_model/Comment/createdAt.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
 :   The creation date of the comment.
     ::: features
@@ -46,19 +70,31 @@ Annotations
     getter/setter pair
     :::
 
+[[downvotesCount](../models_comment_comment_model/Comment/downvotesCount.md)] [↔ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)?]
+:   Number of downvotes on the comment.
+    ::: features
+    getter/setter pair
+    :::
+
 [[hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
 :   The hash code for this object.
     ::: features
     no setterinherited
     :::
 
-[[likeCount](../models_comment_comment_model/Comment/likeCount.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
-:   The like count of the comment.
+[[hasVoted](../models_comment_comment_model/Comment/hasVoted.md)] [↔ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)?]
+:   Variable to check if post is voted by the user.
     ::: features
     getter/setter pair
     :::
 
-[[post](../models_comment_comment_model/Comment/post.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
+[[id](../models_comment_comment_model/Comment/id.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
+:   id of the comment.
+    ::: features
+    getter/setter pair
+    :::
+
+[[post](../models_comment_comment_model/Comment/post.md)] [↔ [Post](../models_post_post_model/Post-class.md)?]
 :   The post associated with the comment.
     ::: features
     getter/setter pair
@@ -70,8 +106,15 @@ Annotations
     no setterinherited
     :::
 
-[[text](../models_comment_comment_model/Comment/text.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
-:   The text of the comment.
+[[upvotesCount](../models_comment_comment_model/Comment/upvotesCount.md)] [↔ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)?]
+:   Number of upvotes on the comment.
+    ::: features
+    getter/setter pair
+    :::
+
+[[voteType](../models_comment_comment_model/Comment/voteType.md)] [↔ [VoteType](../enums_enums/VoteType.md)?]
+:   Variable to check the type of vote on the comment by the user (if
+    not voted then null).
     ::: features
     getter/setter pair
     :::
@@ -120,3 +163,6 @@ Annotations
 
 
 
+
+
+ talawa 1.0.0+1 

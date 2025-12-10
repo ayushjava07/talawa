@@ -1,6 +1,6 @@
-1.  [Constructors](./EventCard-class.md)
-2.  [EventCard](./EventCard/EventCard.md)
-3.  [Properties](./EventCard-class.md)
+1.  [Constructors](./EventCard-class#constructors.md)
+2.  [new](./EventCard/EventCard.md)
+3.  [Properties](./EventCard-class#instance-properties.md)
 4.  [event](./EventCard/event.md)
 5.  [eventTitleHighlightedText](./EventCard/eventTitleHighlightedText.md)
 6.  [eventTitleNormalText](./EventCard/eventTitleNormalText.md)
@@ -8,8 +8,8 @@
 8.  [isSearchItem](./EventCard/isSearchItem.md)
 9.  [key](https://api.flutter.dev/flutter/widgets/Widget/key.html)
 10. [runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)
-11. [Methods](./EventCard-class.md)
-12. [animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)
+11. [Methods](./EventCard-class#instance-methods.md)
+12. [animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)
     ^(ext)^
 13. [build](./EventCard/build.md)
 14. [createElement](https://api.flutter.dev/flutter/widgets/StatelessWidget/createElement.html)
@@ -21,6 +21,6 @@
 20. [toStringDeep](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html)
 21. [toStringShallow](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html)
 22. [toStringShort](https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html)
-23. [Operators](./EventCard-class.md)
+23. [Operators](./EventCard-class#operators.md)
 24. [operator
     ==](https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html)

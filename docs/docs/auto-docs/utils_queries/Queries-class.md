@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [utils/queries.dart](../utils_queries/)
+3.  Queries class
+
+
+Queries
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # Queries class
@@ -12,7 +30,7 @@ This class returns some queries for the application.
 
 ## Constructors
 
-[Queries](../utils_queries/Queries/Queries.md)
+[Queries.new](../utils_queries/Queries/Queries.md)
 
 :   
 
@@ -30,12 +48,6 @@ This class returns some queries for the application.
 :   getter for fetchJoinInOrgByName.
     ::: features
     no setter
-    :::
-
-[[fetchUserInfo](../utils_queries/Queries/fetchUserInfo.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)]
-:   mutation in string form, to be passed on to graphql client..
-    ::: features
-    getter/setter pair
     :::
 
 [[hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
@@ -58,17 +70,19 @@ This class returns some queries for the application.
 :   `createDonation` creates a new donation transaction by taking the
     userId ,orgId ,nameOfOrg ,nameOfUser as parameters.
 
+[[deleteOrganizationMembershipMutation](../utils_queries/Queries/deleteOrganizationMembershipMutation.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+:   mutation to delete organization membership.
+
 [[fetchOrgById](../utils_queries/Queries/fetchOrgById.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] orgId]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   fetching org details with the help of id.
 
-[[fetchOrgDetailsById](../utils_queries/Queries/fetchOrgDetailsById.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] orgId]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
-:   query to fetch org details.
+[[fetchUserInfo](../utils_queries/Queries/fetchUserInfo.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+:   mutation in string form, to be passed on to graphql client.
 
-[[getPluginsList](../utils_queries/Queries/getPluginsList.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
-:   `getPluginList` queries all properties of pluginList from the
-    server.
+[[fetchUsersByOrganizationId](../utils_queries/Queries/fetchUsersByOrganizationId.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] orgId]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+:   Query to fetch users by organization ID using new GraphQL schema.
 
-[[joinOrgById](../utils_queries/Queries/joinOrgById.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] orgId]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+[[joinOrgById](../utils_queries/Queries/joinOrgById.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   make mutation string for joiining org by ord.id.
 
 [[loginUser](../utils_queries/Queries/loginUser.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] email, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)] password]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
@@ -76,9 +90,6 @@ This class returns some queries for the application.
 
 [[logout](../utils_queries/Queries/logout.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   logout muiation.
-
-[[newUserLanguage](../utils_queries/Queries/newUserLanguage.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] userId]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
-:   query for new user language .
 
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
 :   Invoked when a nonexistent method or property is accessed.
@@ -89,10 +100,10 @@ This class returns some queries for the application.
 [[refreshToken](../utils_queries/Queries/refreshToken.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] refreshToken]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   mutation for refresh token.
 
-[[registerUser](../utils_queries/Queries/registerUser.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] firstName, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)] lastName, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)] email, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)] password, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)?] selectedOrganization]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+[[registerUser](../utils_queries/Queries/registerUser.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] name, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)] email, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)] password, ][[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)?] selectedOrganization]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   Mutation to register a user.
 
-[[sendMembershipRequest](../utils_queries/Queries/sendMembershipRequest.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] orgId]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+[[sendMembershipRequest](../utils_queries/Queries/sendMembershipRequest.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   mutation to send the member request.
 
 [[toString](https://api.flutter.dev/flutter/dart-core/Object/toString.html)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
@@ -101,14 +112,8 @@ This class returns some queries for the application.
     inherited
     :::
 
-[[updateLanguage](../utils_queries/Queries/updateLanguage.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] languageCode]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
-:   lang update mutation.
-
 [[updateUserProfile](../utils_queries/Queries/updateUserProfile.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   to update user profile.
-
-[[userLanguage](../utils_queries/Queries/userLanguage.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
-:   query to fetch user lang.
 
 [[venueListQuery](../utils_queries/Queries/venueListQuery.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   Query to get the list of Venues in an organisation.
@@ -141,3 +146,6 @@ This class returns some queries for the application.
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,6 +1,6 @@
-1.  [Constructors](./CustomAlertDialog-class.md)
-2.  [CustomAlertDialog](./CustomAlertDialog/CustomAlertDialog.md)
-3.  [Properties](./CustomAlertDialog-class.md)
+1.  [Constructors](./CustomAlertDialog-class#constructors.md)
+2.  [new](./CustomAlertDialog/CustomAlertDialog.md)
+3.  [Properties](./CustomAlertDialog-class#instance-properties.md)
 4.  [dialogSubTitle](./CustomAlertDialog/dialogSubTitle.md)
 5.  [dialogTitle](./CustomAlertDialog/dialogTitle.md)
 6.  [hashCode](https://api.flutter.dev/flutter/widgets/Widget/hashCode.html)
@@ -11,8 +11,8 @@
 11. [secondaryButtonText](./CustomAlertDialog/secondaryButtonText.md)
 12. [success](./CustomAlertDialog/success.md)
 13. [successText](./CustomAlertDialog/successText.md)
-14. [Methods](./CustomAlertDialog-class.md)
-15. [animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)
+14. [Methods](./CustomAlertDialog-class#instance-methods.md)
+15. [animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)
     ^(ext)^
 16. [build](./CustomAlertDialog/build.md)
 17. [createElement](https://api.flutter.dev/flutter/widgets/StatelessWidget/createElement.html)
@@ -24,6 +24,6 @@
 23. [toStringDeep](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html)
 24. [toStringShallow](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html)
 25. [toStringShort](https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html)
-26. [Operators](./CustomAlertDialog-class.md)
+26. [Operators](./CustomAlertDialog-class#operators.md)
 27. [operator
     ==](https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html)

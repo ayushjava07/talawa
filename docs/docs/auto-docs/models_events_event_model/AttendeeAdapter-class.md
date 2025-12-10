@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [models/events/event_model.dart](../models_events_event_model/)
+3.  AttendeeAdapter class
+
+
+AttendeeAdapter
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # AttendeeAdapter class
@@ -17,7 +35,7 @@ Inheritance
 
 ## Constructors
 
-[AttendeeAdapter](../models_events_event_model/AttendeeAdapter/AttendeeAdapter.md)
+[AttendeeAdapter.new](../models_events_event_model/AttendeeAdapter/AttendeeAdapter.md)
 
 :   
 
@@ -99,3 +117,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

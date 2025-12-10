@@ -1,0 +1,12 @@
+1.  [Constructors](./BaseUseCase-class#constructors.md)
+2.  [new](./BaseUseCase/BaseUseCase.md)
+3.  [Properties](./BaseUseCase-class#instance-properties.md)
+4.  [hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)
+5.  [runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)
+6.  [Methods](./BaseUseCase-class#instance-methods.md)
+7.  [call](./BaseUseCase/call.md)
+8.  [noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)
+9.  [toString](https://api.flutter.dev/flutter/dart-core/Object/toString.html)
+10. [Operators](./BaseUseCase-class#operators.md)
+11. [operator
+    ==](https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html)

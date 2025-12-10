@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [view_model/widgets_view_models/custom_drawer_view_model.dart](../../view_model_widgets_view_models_custom_drawer_view_model/)
+3.  [CustomDrawerViewModel](../../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel-class.md)
+4.  setSelectedOrganizationName method
+
+
+setSelectedOrganizationName
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # setSelectedOrganizationName method
@@ -19,7 +38,8 @@ This function switches the current organization to new organization.
 
 **params**:
 
--   `updatedOrganization`: `OrgInfo` type, new organization.
+-   `updatedOrganization`: The new organization to set as selected.
+    (`OrgInfo` type)
 
 **returns**: None
 
@@ -50,3 +70,6 @@ void setSelectedOrganizationName(OrgInfo updatedOrganization)
 
 
 
+
+
+ talawa 1.0.0+1 

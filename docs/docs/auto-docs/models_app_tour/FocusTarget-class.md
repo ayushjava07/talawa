@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [models/app_tour.dart](../models_app_tour/)
+3.  FocusTarget class
+
+
+FocusTarget
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # FocusTarget class
@@ -12,14 +30,14 @@ Class that represents FocusTarget.
 
 ## Constructors
 
-[[FocusTarget](../models_app_tour/FocusTarget/FocusTarget.md)][]
+[[FocusTarget.new](../models_app_tour/FocusTarget/FocusTarget.md)][]
 :   This returns a widget for a step in a tutorial.
 
 
 
 ## Properties
 
-[[align](../models_app_tour/FocusTarget/align.md)] [↔ [ContentAlign](https://pub.dev/documentation/tutorial_coach_mark/1.2.12/tutorial_coach_mark/ContentAlign.html)]
+[[align](../models_app_tour/FocusTarget/align.md)] [↔ [ContentAlign](https://pub.dev/documentation/tutorial_coach_mark/1.3.3/tutorial_coach_mark/ContentAlign.html)]
 :   alignment of description text.
     ::: features
     getter/setter pair
@@ -43,7 +61,7 @@ Class that represents FocusTarget.
     getter/setter pair
     :::
 
-[[focusWidget](../models_app_tour/FocusTarget/focusWidget.md)] [↔ [TargetFocus](https://pub.dev/documentation/tutorial_coach_mark/1.2.12/tutorial_coach_mark/TargetFocus-class.html)]
+[[focusWidget](../models_app_tour/FocusTarget/focusWidget.md)] [↔ [TargetFocus](https://pub.dev/documentation/tutorial_coach_mark/1.3.3/tutorial_coach_mark/TargetFocus-class.html)]
 :   Target focus widget with all above properties.
     ::: features
     getter/setter pair
@@ -147,3 +165,6 @@ Class that represents FocusTarget.
 
 
 
+
+
+ talawa 1.0.0+1 

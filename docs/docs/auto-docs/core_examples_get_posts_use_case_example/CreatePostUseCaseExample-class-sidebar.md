@@ -1,0 +1,13 @@
+1.  [Constructors](./CreatePostUseCaseExample-class#constructors.md)
+2.  [new](./CreatePostUseCaseExample/CreatePostUseCaseExample.md)
+3.  [Properties](./CreatePostUseCaseExample-class#instance-properties.md)
+4.  [hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)
+5.  [postRepository](./CreatePostUseCaseExample/postRepository.md)
+6.  [runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)
+7.  [Methods](./CreatePostUseCaseExample-class#instance-methods.md)
+8.  [call](./CreatePostUseCaseExample/call.md)
+9.  [noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)
+10. [toString](https://api.flutter.dev/flutter/dart-core/Object/toString.html)
+11. [Operators](./CreatePostUseCaseExample-class#operators.md)
+12. [operator
+    ==](https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html)

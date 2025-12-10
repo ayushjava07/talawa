@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [services/navigation_service.dart](../services_navigation_service/)
+3.  NavigationService class
+
+
+NavigationService
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # NavigationService class
@@ -25,7 +43,7 @@ Services include:
 
 ## Constructors
 
-[NavigationService](../services_navigation_service/NavigationService/NavigationService.md)
+[NavigationService.new](../services_navigation_service/NavigationService/NavigationService.md)
 
 :   
 
@@ -132,3 +150,6 @@ Services include:
 
 
 
+
+
+ talawa 1.0.0+1 

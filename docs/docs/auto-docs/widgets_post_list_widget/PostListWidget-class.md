@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [widgets/post_list_widget.dart](../widgets_post_list_widget/)
+3.  PostListWidget class
+
+
+PostListWidget
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # PostListWidget class
@@ -22,13 +40,13 @@ Inheritance
 
 Available extensions
 
-:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
 
 
 
 ## Constructors
 
-[[PostListWidget](../widgets_post_list_widget/PostListWidget/PostListWidget.md)][]
+[[PostListWidget.new](../widgets_post_list_widget/PostListWidget/PostListWidget.md)][]
 
 :   ::: 
     const
@@ -40,13 +58,6 @@ Available extensions
 
 [[deletePost](../widgets_post_list_widget/PostListWidget/deletePost.md)] [→ dynamic Function[([[[Post](../models_post_post_model/Post-class.md)]])]?]
 :   Function the deleting the post.
-    ::: features
-    final
-    :::
-
-[[function](../widgets_post_list_widget/PostListWidget/function.md)] [→ dynamic Function[([[[Post](../models_post_post_model/Post-class.md)]])]?]
-:   This function is passed for the handling the action to be performed
-    when the comment button is clicked.
     ::: features
     final
     :::
@@ -69,6 +80,12 @@ Available extensions
     final
     :::
 
+[[redirectToIndividualPage](../widgets_post_list_widget/PostListWidget/redirectToIndividualPage.md)] [→ dynamic Function[([[[Post](../models_post_post_model/Post-class.md)]])]?]
+:   This function will be used to redirect to the Individual Post.
+    ::: features
+    final
+    :::
+
 [[runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)] [→ [Type](https://api.flutter.dev/flutter/dart-core/Type-class.html)]
 :   A representation of the runtime type of the object.
     ::: features
@@ -79,18 +96,18 @@ Available extensions
 
 ## Methods
 
-[[animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)] ]
+[[animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)] ]
 
 :   Available on
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html),
     provided by the
-    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
     extension
 
     Wraps the target
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
     in an
-    [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)
+    [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)
     instance, and returns the instance for chaining calls. Ex.
     `myWidget.` is equivalent to `Animate(child: myWidget)`.
 
@@ -188,3 +205,6 @@ Available extensions
 
 
 
+
+
+ talawa 1.0.0+1 

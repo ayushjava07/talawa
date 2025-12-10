@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [models/events/event_model.dart](../models_events_event_model/)
+3.  Attendee class
+
+
+Attendee
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # Attendee class
@@ -20,7 +38,7 @@ Annotations
 
 ## Constructors
 
-[[Attendee](../models_events_event_model/Attendee/Attendee.md)][]
+[[Attendee.new](../models_events_event_model/Attendee/Attendee.md)][]
 
 :   
 
@@ -115,3 +133,6 @@ Annotations
 
 
 
+
+
+ talawa 1.0.0+1 

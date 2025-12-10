@@ -1,6 +1,6 @@
-1.  [Constructors](./CustomAlertDialogWithCheckbox-class.md)
-2.  [CustomAlertDialogWithCheckbox](./CustomAlertDialogWithCheckbox/CustomAlertDialogWithCheckbox.md)
-3.  [Properties](./CustomAlertDialogWithCheckbox-class.md)
+1.  [Constructors](./CustomAlertDialogWithCheckbox-class#constructors.md)
+2.  [new](./CustomAlertDialogWithCheckbox/CustomAlertDialogWithCheckbox.md)
+3.  [Properties](./CustomAlertDialogWithCheckbox-class#instance-properties.md)
 4.  [checkboxLabel](./CustomAlertDialogWithCheckbox/checkboxLabel.md)
 5.  [dialogSubTitle](./CustomAlertDialogWithCheckbox/dialogSubTitle.md)
 6.  [dialogTitle](./CustomAlertDialogWithCheckbox/dialogTitle.md)
@@ -13,8 +13,8 @@
 13. [secondaryButtonText](./CustomAlertDialogWithCheckbox/secondaryButtonText.md)
 14. [success](./CustomAlertDialogWithCheckbox/success.md)
 15. [successText](./CustomAlertDialogWithCheckbox/successText.md)
-16. [Methods](./CustomAlertDialogWithCheckbox-class.md)
-17. [animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)
+16. [Methods](./CustomAlertDialogWithCheckbox-class#instance-methods.md)
+17. [animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)
     ^(ext)^
 18. [createElement](https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html)
 19. [createState](./CustomAlertDialogWithCheckbox/createState.md)
@@ -26,6 +26,6 @@
 25. [toStringDeep](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html)
 26. [toStringShallow](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html)
 27. [toStringShort](https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html)
-28. [Operators](./CustomAlertDialogWithCheckbox-class.md)
+28. [Operators](./CustomAlertDialogWithCheckbox-class#operators.md)
 29. [operator
     ==](https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html)
