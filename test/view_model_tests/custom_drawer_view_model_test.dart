@@ -330,7 +330,7 @@ void main() {
 
       when(userConfig.currentOrgInfoController)
           .thenReturn(StreamController<OrgInfo>());
-      
+
       model.addListener(() {
         listenerCalled = true;
       });
@@ -342,8 +342,10 @@ void main() {
 
       try {
         model.setSelectedOrganizationName(orgInfo);
-        expect(listenerCalled, isFalse, reason: 'Listener should not be called after dispose');
-        expect(model.selectedOrg, isNull, reason: 'State should not change after dispose');
+        expect(listenerCalled, isFalse,
+            reason: 'Listener should not be called after dispose');
+        expect(model.selectedOrg, isNull,
+            reason: 'State should not change after dispose');
       } catch (e) {
         fail('Should not throw exception after dispose: $e');
       }
@@ -414,6 +416,27 @@ void main() {
 
       verify(userConfig.exitCurrentOrg()).called(1);
       verify(navigationService.pop()).called(1);
+    });
+
+    test(
+        'initialize should handle null joinedOrganizations by setting empty list',
+        () {
+      final homeModel = MainScreenViewModel();
+      final MockBuildContext mockContext = MockBuildContext();
+      final model = CustomDrawerViewModel();
+      // Explicitly set joinedOrganizations to null
+      final user = User(joinedOrganizations: null);
+
+      when(userConfig.currentOrgInfoStream)
+          .thenAnswer((_) => Stream.value(OrgInfo()));
+      when(userConfig.currentUser).thenReturn(user);
+      when(userConfig.currentOrg).thenReturn(OrgInfo());
+      when(userConfig.currentOrgInfoController)
+          .thenReturn(StreamController<OrgInfo>());
+
+      model.initialize(homeModel, mockContext);
+
+      expect(model.switchAbleOrg, isEmpty);
     });
   });
 }

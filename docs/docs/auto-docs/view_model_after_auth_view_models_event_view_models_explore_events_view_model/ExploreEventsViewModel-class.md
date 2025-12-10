@@ -77,12 +77,6 @@ Inheritance
     no setter
     :::
 
-[[error](../view_model_base_view_model/BaseModel/error.md)] [→ [AppError](../core_errors_app_error/AppError-class.md)?]
-:   Gets the current error, if any.
-    ::: features
-    no setterinherited
-    :::
-
 [[events](../view_model_after_auth_view_models_event_view_models_explore_events_view_model/ExploreEventsViewModel/events.md)] [→ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[Event](../models_events_event_model/Event-class.md)]\>]]
 :   Getter method to retrieve the list of events.
     ::: features
@@ -93,12 +87,6 @@ Inheritance
 :   Getter method to retrieve the EventService instance.
     ::: features
     no setter
-    :::
-
-[[hasError](../view_model_base_view_model/BaseModel/hasError.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
-:   Returns true if there\'s an error.
-    ::: features
-    no setterinherited
     :::
 
 [[hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
@@ -114,8 +102,8 @@ Inheritance
     :::
 
 [[isBusy](../view_model_base_view_model/BaseModel/isBusy.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
-:   Returns true if the view model is currently busy.
-    ::: features
+
+:   ::: features
     no setterinherited
     :::
 
@@ -126,8 +114,8 @@ Inheritance
     :::
 
 [[state](../view_model_base_view_model/BaseModel/state.md)] [→ [ViewState](../enums_enums/ViewState.md)]
-:   Gets the current view state.
-    ::: features
+
+:   ::: features
     no setterinherited
     :::
 
@@ -154,12 +142,6 @@ Inheritance
 :   This function takes the choosen value from dropdown and return the
     filter events, if empty list then return relevant message.
 
-[clearError](../view_model_base_view_model/BaseModel/clearError.md) [→ void ]
-:   Clears the current error.
-    ::: features
-    inherited
-    :::
-
 [[deleteEvent](../view_model_after_auth_view_models_event_view_models_explore_events_view_model/ExploreEventsViewModel/deleteEvent.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   This function deletes the event.
 
@@ -170,12 +152,6 @@ Inheritance
     will throw after the object is disposed).
     ::: features
     override
-    :::
-
-[[executeWithStateManagement](../view_model_base_view_model/BaseModel/executeWithStateManagement.md)]\<[T\>][([[[Future](https://api.flutter.dev/flutter/dart-core/Future-class.md)\<[T\>]] , ) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[T?\>]] ]
-:   Executes an async operation with automatic state management.
-    ::: features
-    inherited
     :::
 
 [[fetchNewEvents](../view_model_after_auth_view_models_event_view_models_explore_events_view_model/ExploreEventsViewModel/fetchNewEvents.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
@@ -206,21 +182,9 @@ Inheritance
     inherited
     :::
 
-[[setError](../view_model_base_view_model/BaseModel/setError.md)][([[[AppError](../core_errors_app_error/AppError-class.md)] error, ) → void ]
-:   Sets an error and updates the state.
-    ::: features
-    inherited
-    :::
-
-[[setLoading](../view_model_base_view_model/BaseModel/setLoading.md)][([[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.md)] isLoading]) → void ]
-:   Sets the loading state independently of view state.
-    ::: features
-    inherited
-    :::
-
 [[setState](../view_model_base_view_model/BaseModel/setState.md)][([[[ViewState](../enums_enums/ViewState.md)] viewState]) → void ]
-:   Sets the view state and notifies listeners.
-    ::: features
+
+:   ::: features
     inherited
     :::
 

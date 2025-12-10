@@ -31,10 +31,6 @@ state
 
 
 
-Gets the current view state.
-
-
-
 ## Implementation
 
 ``` language-dart

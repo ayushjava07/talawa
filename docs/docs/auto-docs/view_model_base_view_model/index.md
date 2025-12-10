@@ -30,7 +30,8 @@ base_view_model
 ## Classes
 
 [BaseModel](../view_model_base_view_model/BaseModel-class.md)
-:   Base class for all ViewModels in the application.
+
+:   
 
 
 

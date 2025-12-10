@@ -67,12 +67,6 @@ Inheritance
     no setter
     :::
 
-[[error](../view_model_base_view_model/BaseModel/error.md)] [→ [AppError](../core_errors_app_error/AppError-class.md)?]
-:   Gets the current error, if any.
-    ::: features
-    no setterinherited
-    :::
-
 [[event](../view_model_after_auth_view_models_event_view_models_event_info_view_model/EventInfoViewModel/event.md)] [↔ [Event](../models_events_event_model/Event-class.md)]
 :   Event instance to store the event data.
     ::: features
@@ -91,12 +85,6 @@ Inheritance
     getter/setter pair
     :::
 
-[[hasError](../view_model_base_view_model/BaseModel/hasError.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
-:   Returns true if there\'s an error.
-    ::: features
-    no setterinherited
-    :::
-
 [[hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
 :   The hash code for this object.
     ::: features
@@ -110,8 +98,8 @@ Inheritance
     :::
 
 [[isBusy](../view_model_base_view_model/BaseModel/isBusy.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
-:   Returns true if the view model is currently busy.
-    ::: features
+
+:   ::: features
     no setterinherited
     :::
 
@@ -128,8 +116,8 @@ Inheritance
     :::
 
 [[state](../view_model_base_view_model/BaseModel/state.md)] [→ [ViewState](../enums_enums/ViewState.md)]
-:   Gets the current view state.
-    ::: features
+
+:   ::: features
     no setterinherited
     :::
 
@@ -149,12 +137,6 @@ Inheritance
     inherited
     :::
 
-[clearError](../view_model_base_view_model/BaseModel/clearError.md) [→ void ]
-:   Clears the current error.
-    ::: features
-    inherited
-    :::
-
 [[createAgendaItem](../view_model_after_auth_view_models_event_view_models_event_info_view_model/EventInfoViewModel/createAgendaItem.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[EventAgendaItem](../models_events_event_agenda_item/EventAgendaItem-class.md)?]\>]] ]
 :   This function is used to create a new agenda item for an event.
 
@@ -164,17 +146,11 @@ Inheritance
 [[deleteAgendaItem](../view_model_after_auth_view_models_event_view_models_event_info_view_model/EventInfoViewModel/deleteAgendaItem.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] id]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   Method to delete an agenda item.
 
-[dispose](../view_model_base_view_model/BaseModel/dispose.md) [→ void ]
+[dispose](https://api.flutter.dev/flutter/foundation/ChangeNotifier/dispose.html) [→ void ]
 :   Discards any resources used by the object. After this is called, the
     object is not in a usable state and should be discarded (calls to
     [addListener](https://api.flutter.dev/flutter/foundation/ChangeNotifier/addListener.md)
     will throw after the object is disposed).
-    ::: features
-    inherited
-    :::
-
-[[executeWithStateManagement](../view_model_base_view_model/BaseModel/executeWithStateManagement.md)]\<[T\>][([[[Future](https://api.flutter.dev/flutter/dart-core/Future-class.md)\<[T\>]] , ) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[T?\>]] ]
-:   Executes an async operation with automatic state management.
     ::: features
     inherited
     :::
@@ -220,24 +196,12 @@ Inheritance
 [[reorderAgendaItems](../view_model_after_auth_view_models_event_view_models_event_info_view_model/EventInfoViewModel/reorderAgendaItems.md)][([[[int](https://api.flutter.dev/flutter/dart-core/int-class.md)] oldIndex, ][[[int](https://api.flutter.dev/flutter/dart-core/int-class.html)] newIndex]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   Method to redorder the sequence of agenda items.
 
-[[setError](../view_model_base_view_model/BaseModel/setError.md)][([[[AppError](../core_errors_app_error/AppError-class.md)] error, ) → void ]
-:   Sets an error and updates the state.
-    ::: features
-    inherited
-    :::
-
-[[setLoading](../view_model_base_view_model/BaseModel/setLoading.md)][([[[bool](https://api.flutter.dev/flutter/dart-core/bool-class.md)] isLoading]) → void ]
-:   Sets the loading state independently of view state.
-    ::: features
-    inherited
-    :::
-
 [[setSelectedCategories](../view_model_after_auth_view_models_event_view_models_event_info_view_model/EventInfoViewModel/setSelectedCategories.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[AgendaCategory](../models_events_event_agenda_category/AgendaCategory-class.md)]\>]] categories]) → void ]
 :   method to select multiple categories.
 
 [[setState](../view_model_base_view_model/BaseModel/setState.md)][([[[ViewState](../enums_enums/ViewState.md)] viewState]) → void ]
-:   Sets the view state and notifies listeners.
-    ::: features
+
+:   ::: features
     inherited
     :::
 

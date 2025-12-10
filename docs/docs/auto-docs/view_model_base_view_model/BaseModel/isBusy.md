@@ -31,14 +31,10 @@ get isBusy
 
 
 
-Returns true if the view model is currently busy.
-
-
-
 ## Implementation
 
 ``` language-dart
-bool get isBusy => _state == ViewState.busy || _isLoading;
+bool get isBusy => _state == ViewState.busy;
 ```
 
 

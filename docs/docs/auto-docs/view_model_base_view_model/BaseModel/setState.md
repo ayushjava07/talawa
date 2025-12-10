@@ -34,14 +34,6 @@ void setState(
 
 
 
-Sets the view state and notifies listeners.
-
-**params**:
-
--   `viewState`: The new view state to set.
-
-
-
 ## Implementation
 
 ``` language-dart
