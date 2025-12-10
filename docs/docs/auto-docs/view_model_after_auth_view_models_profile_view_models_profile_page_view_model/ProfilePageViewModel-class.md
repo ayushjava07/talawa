@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/after_auth_view_models/profile_view_models/profile_page_view_model.dart](../view_model_after_auth_view_models_profile_view_models_profile_page_view_model/)
+3.  ProfilePageViewModel class
+
+
+ProfilePageViewModel
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # ProfilePageViewModel class
@@ -27,7 +45,7 @@ Inheritance
 
 ## Constructors
 
-[ProfilePageViewModel](../view_model_after_auth_view_models_profile_view_models_profile_page_view_model/ProfilePageViewModel/ProfilePageViewModel.md)
+[ProfilePageViewModel.new](../view_model_after_auth_view_models_profile_view_models_profile_page_view_model/ProfilePageViewModel/ProfilePageViewModel.md)
 
 :   
 
@@ -171,9 +189,6 @@ Inheritance
 [initialize](../view_model_after_auth_view_models_profile_view_models_profile_page_view_model/ProfilePageViewModel/initialize.md) [→ void ]
 :   First function to initialize the viewmodel.
 
-[[invite](../view_model_after_auth_view_models_profile_view_models_profile_page_view_model/ProfilePageViewModel/invite.md)][([[[BuildContext](https://api.flutter.dev/flutter/widgets/BuildContext-class.md)] context]) → void ]
-:   This Function creates a QR Code for latest release .
-
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
 :   Invoked when a nonexistent method or property is accessed.
     ::: features
@@ -242,3 +257,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

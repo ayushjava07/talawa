@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [constants/quick_actions.dart](../constants_quick_actions/)
+3.  ShortCutMenu class
+
+
+ShortCutMenu
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # ShortCutMenu class
@@ -13,7 +31,7 @@ with the application. quick_actions package is used for this purpose.
 
 ## Constructors
 
-[ShortCutMenu](../constants_quick_actions/ShortCutMenu/ShortCutMenu.md)
+[ShortCutMenu.new](../constants_quick_actions/ShortCutMenu/ShortCutMenu.md)
 
 :   
 
@@ -103,3 +121,6 @@ with the application. quick_actions package is used for this purpose.
 
 
 
+
+
+ talawa 1.0.0+1 

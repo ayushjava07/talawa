@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [models/asymetric_keys/asymetric_keys.dart](../../models_asymetric_keys_asymetric_keys/)
+3.  [AsymetricKeys](../../models_asymetric_keys_asymetric_keys/AsymetricKeys-class.md)
+4.  keyPair property
+
+
+keyPair
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # keyPair property
@@ -12,8 +31,8 @@
 
 </div>
 
-[AsymmetricKeyPair](https://pub.dev/documentation/pointycastle/3.9.1/pointycastle/AsymmetricKeyPair-class.html)[\<[[PublicKey](https://pub.dev/documentation/pointycastle/3.9.1/pointycastle/PublicKey-class.html)],
-[[PrivateKey](https://pub.dev/documentation/pointycastle/3.9.1/pointycastle/PrivateKey-class.html)]\>]
+[AsymmetricKeyPair](https://pub.dev/documentation/pointycastle/4.0.0/pointycastle/AsymmetricKeyPair-class.html)[\<[[PublicKey](https://pub.dev/documentation/pointycastle/4.0.0/pointycastle/PublicKey-class.html)],
+[[PrivateKey](https://pub.dev/documentation/pointycastle/4.0.0/pointycastle/PrivateKey-class.html)]\>]
 keyPair
 
 
@@ -54,3 +73,6 @@ final AsymmetricKeyPair<PublicKey, PrivateKey> keyPair;
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,0 +1,13 @@
+1.  [Constructors](./PaginatedRepository-class#constructors.md)
+2.  [new](./PaginatedRepository/PaginatedRepository.md)
+3.  [Properties](./PaginatedRepository-class#instance-properties.md)
+4.  [hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)
+5.  [repositoryName](./BaseRepository/repositoryName.md)
+6.  [runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)
+7.  [Methods](./PaginatedRepository-class#instance-methods.md)
+8.  [getPage](./PaginatedRepository/getPage.md)
+9.  [noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)
+10. [toString](https://api.flutter.dev/flutter/dart-core/Object/toString.html)
+11. [Operators](./PaginatedRepository-class#operators.md)
+12. [operator
+    ==](https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html)

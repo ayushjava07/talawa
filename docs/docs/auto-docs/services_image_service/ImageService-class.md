@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [services/image_service.dart](../services_image_service/)
+3.  ImageService class
+
+
+ImageService
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # ImageService class
@@ -13,12 +31,15 @@ Services include:
 
 -   `cropImage`
 -   `convertToBase64`
+-   `uploadFileToMinio`
+-   `getFileFromMinio`
+-   `calculateFileHash`
 
 
 
 ## Constructors
 
-[ImageService](../services_image_service/ImageService/ImageService.md)
+[ImageService.new](../services_image_service/ImageService/ImageService.md)
 
 :   
 
@@ -42,11 +63,20 @@ Services include:
 
 ## Methods
 
+[[calculateFileHash](../services_image_service/ImageService/calculateFileHash.md)][([[[File](https://api.flutter.dev/flutter/dart-io/File-class.md)] file]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]] ]
+:   Calculates SHA-256 hash of a file.
+
 [[convertToBase64](../services_image_service/ImageService/convertToBase64.md)][([[[File](https://api.flutter.dev/flutter/dart-io/File-class.md)] file]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]] ]
 :   Converts the image into Base64 format.
 
 [[cropImage](../services_image_service/ImageService/cropImage.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[File](https://api.flutter.dev/flutter/dart-io/File-class.html)?]\>]] ]
 :   Crops the image selected by the user.
+
+[[getContentType](../services_image_service/ImageService/getContentType.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] fileName]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+:   Helper method to determine content type from file name.
+
+[[getFileFromMinio](../services_image_service/ImageService/getFileFromMinio.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]] ]
+:   Gets a file from Minio storage using a presigned URL.
 
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
 :   Invoked when a nonexistent method or property is accessed.
@@ -59,6 +89,9 @@ Services include:
     ::: features
     inherited
     :::
+
+[[uploadFileToMinio](../services_image_service/ImageService/uploadFileToMinio.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[Map](https://api.flutter.dev/flutter/dart-core/Map-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)], [[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]]\>]] ]
+:   Uploads a file to Minio storage.
 
 
 
@@ -88,3 +121,6 @@ Services include:
 
 
 
+
+
+ talawa 1.0.0+1 

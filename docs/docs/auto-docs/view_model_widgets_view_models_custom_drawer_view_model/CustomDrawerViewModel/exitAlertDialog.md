@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [view_model/widgets_view_models/custom_drawer_view_model.dart](../../view_model_widgets_view_models_custom_drawer_view_model/)
+3.  [CustomDrawerViewModel](../../view_model_widgets_view_models_custom_drawer_view_model/CustomDrawerViewModel-class.md)
+4.  exitAlertDialog method
+
+
+exitAlertDialog
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # exitAlertDialog method
@@ -7,13 +26,20 @@
 
 
 [[CustomAlertDialog](../../widgets_custom_alert_dialog/CustomAlertDialog-class.md)]
+exitAlertDialog(
 
+1.  [[[BuildContext](https://api.flutter.dev/flutter/widgets/BuildContext-class.md)]
+    context]
+
+)
 
 
 
 returns an exit alert dialog.
 
-**params**: None
+**params**:
+
+-   `context`: `BuildContext` instance of BuildContext.
 
 **returns**:
 
@@ -24,7 +50,7 @@ returns an exit alert dialog.
 ## Implementation
 
 ``` language-dart
-CustomAlertDialog  
+CustomAlertDialog exitAlertDialog(BuildContext context) 
 ```
 
 
@@ -46,3 +72,6 @@ CustomAlertDialog
 
 
 
+
+
+ talawa 1.0.0+1 

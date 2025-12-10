@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [views/after_auth_screens/profile/profile_page.dart](../views_after_auth_screens_profile_profile_page/)
+3.  ProfilePage class
+
+
+ProfilePage
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # ProfilePage class
@@ -21,13 +39,13 @@ Inheritance
 
 Available extensions
 
-:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
 
 
 
 ## Constructors
 
-[[ProfilePage](../views_after_auth_screens_profile_profile_page/ProfilePage/ProfilePage.md)][]
+[[ProfilePage.new](../views_after_auth_screens_profile_profile_page/ProfilePage/ProfilePage.md)][]
 
 :   ::: 
     const
@@ -41,12 +59,6 @@ Available extensions
 :   The hash code for this object.
     ::: features
     no setterinherited
-    :::
-
-[[homeModel](../views_after_auth_screens_profile_profile_page/ProfilePage/homeModel.md)] [→ [MainScreenViewModel](../view_model_main_screen_view_model/MainScreenViewModel-class.md)?]
-:   represents MainScreenViewModel.
-    ::: features
-    final
     :::
 
 [[key](https://api.flutter.dev/flutter/widgets/Widget/key.html)] [→ [Key](https://api.flutter.dev/flutter/foundation/Key-class.html)?]
@@ -65,18 +77,18 @@ Available extensions
 
 ## Methods
 
-[[animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)] ]
+[[animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)] ]
 
 :   Available on
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html),
     provided by the
-    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
     extension
 
     Wraps the target
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
     in an
-    [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)
+    [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)
     instance, and returns the instance for chaining calls. Ex.
     `myWidget.` is equivalent to `Animate(child: myWidget)`.
 
@@ -177,3 +189,6 @@ Available extensions
 
 
 
+
+
+ talawa 1.0.0+1 

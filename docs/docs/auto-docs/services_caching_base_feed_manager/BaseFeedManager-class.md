@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [services/caching/base_feed_manager.dart](../services_caching_base_feed_manager/)
+3.  BaseFeedManager\<[T\>] class
+
+
+BaseFeedManager
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # BaseFeedManager\<[T\>] class [abstract](https://dart.dev/language/class-modifiers#abstract "This type can not be directly constructed.")
@@ -35,13 +53,14 @@ handles automatic cache refreshing when online.
 Implementers
 
 :   -   [EventService](../services_event_service/EventService-class.md)
+    -   [PinnedPostService](../services_pinned_post_service/PinnedPostService-class.md)
     -   [PostService](../services_post_service/PostService-class.md)
 
 
 
 ## Constructors
 
-[[BaseFeedManager](../services_caching_base_feed_manager/BaseFeedManager/BaseFeedManager.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] cacheKey])]
+[[BaseFeedManager.new](../services_caching_base_feed_manager/BaseFeedManager/BaseFeedManager.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] cacheKey])]
 
 :   
 
@@ -125,3 +144,6 @@ Implementers
 
 
 
+
+
+ talawa 1.0.0+1 

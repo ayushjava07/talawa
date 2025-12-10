@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [constants/recurrence_values.dart](../constants_recurrence_values/)
+3.  RecurringEventMutationType class
+
+
+RecurringEventMutationType
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # RecurringEventMutationType class
@@ -12,7 +30,7 @@ Class containing constants for recurrence end types.
 
 ## Constructors
 
-[RecurringEventMutationType](../constants_recurrence_values/RecurringEventMutationType/RecurringEventMutationType.md)
+[RecurringEventMutationType.new](../constants_recurrence_values/RecurringEventMutationType/RecurringEventMutationType.md)
 
 :   
 
@@ -89,3 +107,6 @@ Class containing constants for recurrence end types.
 
 
 
+
+
+ talawa 1.0.0+1 

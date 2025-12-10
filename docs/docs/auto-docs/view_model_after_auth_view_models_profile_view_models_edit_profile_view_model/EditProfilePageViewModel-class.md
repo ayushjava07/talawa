@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/after_auth_view_models/profile_view_models/edit_profile_view_model.dart](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/)
+3.  EditProfilePageViewModel class
+
+
+EditProfilePageViewModel
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # EditProfilePageViewModel class
@@ -27,7 +45,7 @@ Inheritance
 
 ## Constructors
 
-[EditProfilePageViewModel](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/EditProfilePageViewModel.md)
+[EditProfilePageViewModel.new](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/EditProfilePageViewModel.md)
 
 :   
 
@@ -35,26 +53,20 @@ Inheritance
 
 ## Properties
 
-[[base64Image](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/base64Image.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
-:   profile image in base64.
-    ::: features
-    getter/setter pair
-    :::
-
 [[databaseService](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/databaseService.md)] [→ [DataBaseMutationFunctions](../services_database_mutation_functions/DataBaseMutationFunctions-class.md)]
 :   Graphql client.
     ::: features
     final
     :::
 
-[[firstNameFocus](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/firstNameFocus.md)] [↔ [FocusNode](https://api.flutter.dev/flutter/widgets/FocusNode-class.html)]
-:   Focus node tpo control focus.
+[[emailFocus](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/emailFocus.md)] [↔ [FocusNode](https://api.flutter.dev/flutter/widgets/FocusNode-class.html)]
+:   Focus node to control focus.
     ::: features
     getter/setter pair
     :::
 
-[[firstNameTextController](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/firstNameTextController.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
-:   first name controller.
+[[emailTextController](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/emailTextController.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
+:   email controller.
     ::: features
     getter/setter pair
     :::
@@ -83,14 +95,14 @@ Inheritance
     no setterinherited
     :::
 
-[[lastNameFocus](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/lastNameFocus.md)] [↔ [FocusNode](https://api.flutter.dev/flutter/widgets/FocusNode-class.html)]
+[[nameFocus](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/nameFocus.md)] [↔ [FocusNode](https://api.flutter.dev/flutter/widgets/FocusNode-class.html)]
 :   Focus node tpo control focus.
     ::: features
     getter/setter pair
     :::
 
-[[lastNameTextController](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/lastNameTextController.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
-:   last name controller.
+[[nameTextController](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/nameTextController.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
+:   first name controller.
     ::: features
     getter/setter pair
     :::
@@ -129,16 +141,13 @@ Inheritance
     inherited
     :::
 
-[[convertToBase64](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/convertToBase64.md)][([[[File](https://api.flutter.dev/flutter/dart-io/File-class.md)] file]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]] ]
-:   This function is used to convert the image into Base64 format.
-
-[dispose](https://api.flutter.dev/flutter/foundation/ChangeNotifier/dispose.html) [→ void ]
+[dispose](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/dispose.md) [→ void ]
 :   Discards any resources used by the object. After this is called, the
     object is not in a usable state and should be discarded (calls to
     [addListener](https://api.flutter.dev/flutter/foundation/ChangeNotifier/addListener.md)
     will throw after the object is disposed).
     ::: features
-    inherited
+    override
     :::
 
 [initialize](../view_model_after_auth_view_models_profile_view_models_edit_profile_view_model/EditProfilePageViewModel/initialize.md) [→ void ]
@@ -212,3 +221,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

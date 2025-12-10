@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [services/post_service.dart](../../services_post_service/)
+3.  [PostService](../../services_post_service/PostService-class.md)
+4.  addCommentLocally method
+
+
+addCommentLocally
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # addCommentLocally method
@@ -8,8 +27,8 @@
 
 void addCommentLocally(
 
-1.  [[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)]
-    postID]
+1.  [[[Post](../../models_post_post_model/Post-class.md)]
+    post]
 
 )
 
@@ -20,7 +39,7 @@ Stream.
 
 **params**:
 
--   `postID`: ID of the post to add comment locally
+-   `post`: ID of the post to add comment locally
 
 **returns**: None
 
@@ -29,7 +48,7 @@ Stream.
 ## Implementation
 
 ``` language-dart
-void addCommentLocally(String postID) 
+void addCommentLocally(Post post) 
 ```
 
 
@@ -51,3 +70,6 @@ void addCommentLocally(String postID)
 
 
 
+
+
+ talawa 1.0.0+1 

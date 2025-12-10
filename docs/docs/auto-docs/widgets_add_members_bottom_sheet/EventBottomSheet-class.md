@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [widgets/add_members_bottom_sheet.dart](../widgets_add_members_bottom_sheet/)
+3.  EventBottomSheet class
+
+
+EventBottomSheet
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # EventBottomSheet class
@@ -12,7 +30,7 @@ Adds members to an event.
 
 ## Constructors
 
-[EventBottomSheet](../widgets_add_members_bottom_sheet/EventBottomSheet/EventBottomSheet.md)
+[EventBottomSheet.new](../widgets_add_members_bottom_sheet/EventBottomSheet/EventBottomSheet.md)
 
 :   
 
@@ -79,3 +97,6 @@ Adds members to an event.
 
 
 
+
+
+ talawa 1.0.0+1 

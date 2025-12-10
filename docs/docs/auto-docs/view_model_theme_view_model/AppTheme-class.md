@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/theme_view_model.dart](../view_model_theme_view_model/)
+3.  AppTheme class
+
+
+AppTheme
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # AppTheme class
@@ -27,7 +45,7 @@ Inheritance
 
 ## Constructors
 
-[AppTheme](../view_model_theme_view_model/AppTheme/AppTheme.md)
+[AppTheme.new](../view_model_theme_view_model/AppTheme/AppTheme.md)
 
 :   
 
@@ -167,3 +185,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

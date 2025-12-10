@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/lang_view_model.dart](../view_model_lang_view_model/)
+3.  AppLanguage class
+
+
+AppLanguage
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # AppLanguage class
@@ -35,7 +53,7 @@ Inheritance
 
 ## Constructors
 
-[[AppLanguage](../view_model_lang_view_model/AppLanguage/AppLanguage.md)][]
+[[AppLanguage.new](../view_model_lang_view_model/AppLanguage/AppLanguage.md)][]
 
 :   
 
@@ -108,15 +126,8 @@ Inheritance
     inherited
     :::
 
-[[appLanguageQuery](../view_model_lang_view_model/AppLanguage/appLanguageQuery.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
-:   Queries the app language.
-
 [[changeLanguage](../view_model_lang_view_model/AppLanguage/changeLanguage.md)][([[[Locale](https://api.flutter.dev/flutter/dart-ui/Locale-class.md)] type]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   This function change the app default language.
-
-[[dbLanguageUpdate](../view_model_lang_view_model/AppLanguage/dbLanguageUpdate.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
-:   This function updates the Database Language by running the graphQL
-    `mutations`.
 
 [dispose](https://api.flutter.dev/flutter/foundation/ChangeNotifier/dispose.html) [→ void ]
 :   Discards any resources used by the object. After this is called, the
@@ -171,10 +182,6 @@ Inheritance
     inherited
     :::
 
-[[userLanguageQuery](../view_model_lang_view_model/AppLanguage/userLanguageQuery.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] userId]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
-:   This function perform graphQL query to check the user\'s language in
-    the database.
-
 
 
 ## Operators
@@ -203,3 +210,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

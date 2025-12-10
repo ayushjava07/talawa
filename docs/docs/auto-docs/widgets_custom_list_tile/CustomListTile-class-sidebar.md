@@ -1,6 +1,6 @@
-1.  [Constructors](./CustomListTile-class.md)
-2.  [CustomListTile](./CustomListTile)
-3.  [Properties](./CustomListTile-class.md)
+1.  [Constructors](./CustomListTile-class#constructors.md)
+2.  [new](./CustomListTile)
+3.  [Properties](./CustomListTile-class#instance-properties.md)
 4.  [attendeeInfo](./CustomListTile/attendeeInfo.md)
 5.  [hashCode](https://api.flutter.dev/flutter/widgets/Widget/hashCode.html)
 6.  [index](./CustomListTile/index.md)
@@ -15,8 +15,8 @@
 15. [showIcon](./CustomListTile/showIcon.md)
 16. [type](./CustomListTile/type.md)
 17. [userInfo](./CustomListTile/userInfo.md)
-18. [Methods](./CustomListTile-class.md)
-19. [animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)
+18. [Methods](./CustomListTile-class#instance-methods.md)
+19. [animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)
     ^(ext)^
 20. [build](./CustomListTile/build.md)
 21. [createElement](https://api.flutter.dev/flutter/widgets/StatelessWidget/createElement.html)
@@ -28,6 +28,6 @@
 27. [toStringDeep](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html)
 28. [toStringShallow](https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html)
 29. [toStringShort](https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html)
-30. [Operators](./CustomListTile-class.md)
+30. [Operators](./CustomListTile-class#operators.md)
 31. [operator
     ==](https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html)

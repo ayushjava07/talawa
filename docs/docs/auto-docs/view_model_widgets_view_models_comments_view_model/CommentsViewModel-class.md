@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/widgets_view_models/comments_view_model.dart](../view_model_widgets_view_models_comments_view_model/)
+3.  CommentsViewModel class
+
+
+CommentsViewModel
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # CommentsViewModel class
@@ -28,7 +46,7 @@ Inheritance
 
 ## Constructors
 
-[CommentsViewModel](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/CommentsViewModel.md)
+[CommentsViewModel.new](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/CommentsViewModel.md)
 
 :   
 
@@ -54,16 +72,29 @@ Inheritance
     no setterinherited
     :::
 
+[[hasNextPage](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/hasNextPage.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
+:   This function is used to get if there is a next page of comments
+    available.
+    ::: features
+    no setter
+    :::
+
 [[isBusy](../view_model_base_view_model/BaseModel/isBusy.md)] [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)]
 
 :   ::: features
     no setterinherited
     :::
 
-[[postId](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/postId.md)] [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)]
-:   Id of current post.
+[[pageInfo](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/pageInfo.md)] [↔ [PageInfo](../models_page_info_page_info/PageInfo-class.md)]
+:   page Info of the current comments.
     ::: features
-    no setter
+    getter/setter pair
+    :::
+
+[[post](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/post.md)] [↔ [Post](../models_post_post_model/Post-class.md)]
+:   Post on which comments are to be fetched.
+    ::: features
+    getter/setter pair
     :::
 
 [[runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)] [→ [Type](https://api.flutter.dev/flutter/dart-core/Type-class.html)]
@@ -82,7 +113,7 @@ Inheritance
 
 ## Methods
 
-[[addCommentLocally](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/addCommentLocally.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] msg]) → void ]
+[[addCommentLocally](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/addCommentLocally.md)][([[[Comment](../models_comment_comment_model/Comment-class.md)?] comment]) → void ]
 :   This function add comment locally.
 
 [[addListener](https://api.flutter.dev/flutter/foundation/ChangeNotifier/addListener.html)][([[[VoidCallback](https://api.flutter.dev/flutter/dart-ui/VoidCallback.md)] listener]) → void ]
@@ -104,10 +135,13 @@ Inheritance
     inherited
     :::
 
+[[fetchNextPage](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/fetchNextPage.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+:   This function is used to fetch next page of comments if available.
+
 [[getComments](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/getComments.md)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   This function is used to get all comments on the post.
 
-[[initialise](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/initialise.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] postID]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
+[[initialise](../view_model_widgets_view_models_comments_view_model/CommentsViewModel/initialise.md)][([[[Post](../models_post_post_model/Post-class.md)] post]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   This function is used to initialise the CommentViewModel.
 
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
@@ -169,3 +203,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

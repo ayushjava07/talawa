@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [services/session_manager.dart](../services_session_manager/)
+3.  SessionManager class
+
+
+SessionManager
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # SessionManager class
@@ -12,7 +30,7 @@ Manages user sessions and periodically refreshes access tokens.
 
 ## Constructors
 
-[SessionManager](../services_session_manager/SessionManager/SessionManager.md)
+[SessionManager.new](../services_session_manager/SessionManager/SessionManager.md)
 
 :   
 
@@ -88,3 +106,6 @@ Manages user sessions and periodically refreshes access tokens.
 
 
 
+
+
+ talawa 1.0.0+1 

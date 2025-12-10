@@ -1,0 +1,12 @@
+1.  [Constructors](./BaseRepository-class#constructors.md)
+2.  [new](./BaseRepository/BaseRepository.md)
+3.  [Properties](./BaseRepository-class#instance-properties.md)
+4.  [hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)
+5.  [repositoryName](./BaseRepository/repositoryName.md)
+6.  [runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)
+7.  [Methods](./BaseRepository-class#instance-methods.md)
+8.  [noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)
+9.  [toString](https://api.flutter.dev/flutter/dart-core/Object/toString.html)
+10. [Operators](./BaseRepository-class#operators.md)
+11. [operator
+    ==](https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html)

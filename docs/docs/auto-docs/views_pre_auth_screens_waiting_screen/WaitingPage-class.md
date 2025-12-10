@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [views/pre_auth_screens/waiting_screen.dart](../views_pre_auth_screens_waiting_screen/)
+3.  WaitingPage class
+
+
+WaitingPage
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # WaitingPage class
@@ -21,13 +39,13 @@ Inheritance
 
 Available extensions
 
-:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
 
 
 
 ## Constructors
 
-[[WaitingPage](../views_pre_auth_screens_waiting_screen/WaitingPage/WaitingPage.md)][]
+[[WaitingPage.new](../views_pre_auth_screens_waiting_screen/WaitingPage/WaitingPage.md)][]
 
 :   ::: 
     const
@@ -59,18 +77,18 @@ Available extensions
 
 ## Methods
 
-[[animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)] ]
+[[animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)] ]
 
 :   Available on
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html),
     provided by the
-    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
     extension
 
     Wraps the target
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
     in an
-    [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)
+    [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)
     instance, and returns the instance for chaining calls. Ex.
     `myWidget.` is equivalent to `Animate(child: myWidget)`.
 
@@ -168,3 +186,6 @@ Available extensions
 
 
 
+
+
+ talawa 1.0.0+1 

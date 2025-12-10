@@ -1,0 +1,17 @@
+1.  [Values](./RouteType#values.md)
+2.  [material](./RouteType#material.md)
+3.  [cupertino](./RouteType#cupertino.md)
+4.  [Properties](./RouteType#instance-properties.md)
+5.  [hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)
+6.  [index](https://api.flutter.dev/flutter/dart-core/Enum/index.html)
+7.  [name](https://api.flutter.dev/flutter/dart-core/EnumName/name.html)
+    ^(ext)^
+8.  [runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)
+9.  [Methods](./RouteType#instance-methods.md)
+10. [noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)
+11. [toString](https://api.flutter.dev/flutter/dart-core/Object/toString.html)
+12. [Operators](./RouteType#operators.md)
+13. [operator
+    ==](https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html)
+14. [Constants](./RouteType#constants.md)
+15. [values](./RouteType/values-constant.md)

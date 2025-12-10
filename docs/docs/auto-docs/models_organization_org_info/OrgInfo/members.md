@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [models/organization/org_info.dart](../../models_organization_org_info/)
+3.  [OrgInfo](../../models_organization_org_info/OrgInfo-class.md)
+4.  members property
+
+
+members
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # members property
@@ -8,7 +27,7 @@
 
 <div>
 
-1.  @[HiveField](https://pub.dev/documentation/hive/2.2.3/hive/HiveField-class.html)(4)
+1.  @[HiveField](https://pub.dev/documentation/hive/2.2.3/hive/HiveField-class.html)(15)
 
 </div>
 
@@ -21,14 +40,16 @@ getter/setter pair
 
 
 
-The org name.
+List of members in the organization.
 
 
 
 ## Implementation
 
 ``` language-dart
-@HiveField(4)
+@HiveField(15)
+
+/// List of members in the organization.
 List<User>? members;
 ```
 
@@ -51,3 +72,6 @@ List<User>? members;
 
 
 
+
+
+ talawa 1.0.0+1 

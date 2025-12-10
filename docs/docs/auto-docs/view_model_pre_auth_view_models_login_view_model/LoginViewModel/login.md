@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [view_model/pre_auth_view_models/login_view_model.dart](../../view_model_pre_auth_view_models_login_view_model/)
+3.  [LoginViewModel](../../view_model_pre_auth_view_models_login_view_model/LoginViewModel-class.md)
+4.  login method
+
+
+login
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # login method
@@ -24,11 +43,6 @@ Handles the login process by performing the following steps:
 6.  Initializing database functions.
 7.  Performing a GraphQL mutation to login the user by providing the
     email and encrypted password.
-8.  Handling the result of the login operation:
-    -   Updating the current user with the received data.
-    -   Redirecting the user based on their status in the application.
-    -   Handling Firebase options for Android and iOS if available.
-    -   Configuring Firebase and saving FCM token to the database.
 
 In case of any exceptions during the login process, this function
 catches and prints the error.
@@ -64,3 +78,6 @@ Future<void>  async
 
 
 
+
+
+ talawa 1.0.0+1 

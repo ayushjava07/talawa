@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [widgets/raised_round_edge_button.dart](../widgets_raised_round_edge_button/)
+3.  RaisedRoundedButton class
+
+
+RaisedRoundedButton
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # RaisedRoundedButton class
@@ -22,13 +40,13 @@ Inheritance
 
 Available extensions
 
-:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
 
 
 
 ## Constructors
 
-[[RaisedRoundedButton](../widgets_raised_round_edge_button/RaisedRoundedButton/RaisedRoundedButton.md)][]
+[[RaisedRoundedButton.new](../widgets_raised_round_edge_button/RaisedRoundedButton/RaisedRoundedButton.md)][]
 
 :   ::: 
     const
@@ -38,7 +56,7 @@ Available extensions
 
 ## Properties
 
-[[backgroundColor](../widgets_raised_round_edge_button/RaisedRoundedButton/backgroundColor.md)] [→ [Color](https://api.flutter.dev/flutter/painting/Color-class.html)]
+[[backgroundColor](../widgets_raised_round_edge_button/RaisedRoundedButton/backgroundColor.md)] [→ [Color](https://api.flutter.dev/flutter/dart-ui/Color-class.html)]
 
 :   ::: features
     final
@@ -86,7 +104,7 @@ Available extensions
     final
     :::
 
-[[textColor](../widgets_raised_round_edge_button/RaisedRoundedButton/textColor.md)] [→ [Color](https://api.flutter.dev/flutter/painting/Color-class.html)]
+[[textColor](../widgets_raised_round_edge_button/RaisedRoundedButton/textColor.md)] [→ [Color](https://api.flutter.dev/flutter/dart-ui/Color-class.html)]
 
 :   ::: features
     final
@@ -102,18 +120,18 @@ Available extensions
 
 ## Methods
 
-[[animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)] ]
+[[animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)] ]
 
 :   Available on
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html),
     provided by the
-    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
     extension
 
     Wraps the target
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
     in an
-    [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)
+    [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)
     instance, and returns the instance for chaining calls. Ex.
     `myWidget.` is equivalent to `Animate(child: myWidget)`.
 
@@ -212,3 +230,6 @@ Available extensions
 
 
 
+
+
+ talawa 1.0.0+1 

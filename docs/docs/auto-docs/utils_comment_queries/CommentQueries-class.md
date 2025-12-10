@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [utils/comment_queries.dart](../utils_comment_queries/)
+3.  CommentQueries class
+
+
+CommentQueries
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # CommentQueries class
@@ -12,7 +30,7 @@ This class creates the queries dealing with comments.
 
 ## Constructors
 
-[CommentQueries](../utils_comment_queries/CommentQueries/CommentQueries.md)
+[CommentQueries.new](../utils_comment_queries/CommentQueries/CommentQueries.md)
 
 :   
 
@@ -39,7 +57,7 @@ This class creates the queries dealing with comments.
 [[createComment](../utils_comment_queries/CommentQueries/createComment.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   Creating a comment.
 
-[[getPostsComments](../utils_comment_queries/CommentQueries/getPostsComments.md)][([[[String](https://api.flutter.dev/flutter/dart-core/String-class.md)] postId]) [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+[[getPostsComments](../utils_comment_queries/CommentQueries/getPostsComments.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
 :   Get all comments for a post.
 
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
@@ -53,6 +71,9 @@ This class creates the queries dealing with comments.
     ::: features
     inherited
     :::
+
+[[updateVoteComment](../utils_comment_queries/CommentQueries/updateVoteComment.md)][ [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)] ]
+:   Update vote on a comment (upvote or downvote, or change vote type).
 
 
 
@@ -82,3 +103,6 @@ This class creates the queries dealing with comments.
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,0 +1,13 @@
+1.  [Constructors](./AttachmentQueries-class#constructors.md)
+2.  [new](./AttachmentQueries/AttachmentQueries.md)
+3.  [Properties](./AttachmentQueries-class#instance-properties.md)
+4.  [hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)
+5.  [runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)
+6.  [Methods](./AttachmentQueries-class#instance-methods.md)
+7.  [createPresignedUrlMutation](./AttachmentQueries/createPresignedUrlMutation.md)
+8.  [getFileUrlMutation](./AttachmentQueries/getFileUrlMutation.md)
+9.  [noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)
+10. [toString](https://api.flutter.dev/flutter/dart-core/Object/toString.html)
+11. [Operators](./AttachmentQueries-class#operators.md)
+12. [operator
+    ==](https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html)

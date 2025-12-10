@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [models/user/user_info.dart](../../models_user_user_info/)
+3.  [User](../../models_user_user_info/User-class.md)
+4.  updateMemberRequestOrg method
+
+
+updateMemberRequestOrg
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # updateMemberRequestOrg method
@@ -8,7 +27,7 @@
 
 void updateMemberRequestOrg(
 
-1.  [[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../../models_organization_org_info/OrgInfo-class.md)]\>]]
+1.  [[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]]
     orgList]
 
 )
@@ -28,7 +47,7 @@ Method to update membershipRequests List.
 ## Implementation
 
 ``` language-dart
-void updateMemberRequestOrg(List<OrgInfo> orgList) 
+void updateMemberRequestOrg(List<String> orgList) 
 ```
 
 
@@ -50,3 +69,6 @@ void updateMemberRequestOrg(List<OrgInfo> orgList)
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [models/user/user_info.dart](../../models_user_user_info/)
+3.  [User](../../models_user_user_info/User-class.md)
+4.  lastName property
+
+
+lastName
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # lastName property
@@ -6,31 +25,22 @@
 </div>
 
 
-<div>
 
-1.  @[HiveField](https://pub.dev/documentation/hive/2.2.3/hive/HiveField-class.html)(4)
-
-</div>
-
-[String](https://api.flutter.dev/flutter/dart-core/String-class.html)?
-lastName
-
-
-getter/setter pair
+[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
+get lastName
 
 
 
-
-HiveField for user\'s last name.
+Last name of the user.
 
 
 
 ## Implementation
 
 ``` language-dart
-@HiveField(4)
-String? lastName;
+String? get lastName 
 ```
+
 
 
 
@@ -51,3 +61,6 @@ String? lastName;
 
 
 
+
+
+ talawa 1.0.0+1 

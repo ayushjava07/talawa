@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/pre_auth_view_models/signup_details_view_model.dart](../view_model_pre_auth_view_models_signup_details_view_model/)
+3.  SignupDetailsViewModel class
+
+
+SignupDetailsViewModel
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # SignupDetailsViewModel class
@@ -27,7 +45,7 @@ Inheritance
 
 ## Constructors
 
-[SignupDetailsViewModel](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/SignupDetailsViewModel.md)
+[SignupDetailsViewModel.new](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/SignupDetailsViewModel.md)
 
 :   
 
@@ -50,12 +68,6 @@ Inheritance
 
 [[email](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/email.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
 :   TextEditingController for handling email input field.
-    ::: features
-    getter/setter pair
-    :::
-
-[[firstName](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/firstName.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
-:   TextEditingController for handling first name input field.
     ::: features
     getter/setter pair
     :::
@@ -98,8 +110,8 @@ Inheritance
     no setterinherited
     :::
 
-[[lastName](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/lastName.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
-:   TextEditingController for handling last name input field.
+[[name](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/name.md)] [↔ [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)]
+:   TextEditingController for handling name input field.
     ::: features
     getter/setter pair
     :::
@@ -122,7 +134,7 @@ Inheritance
     getter/setter pair
     :::
 
-[[selectedOrganization](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/selectedOrganization.md)] [↔ [OrgInfo](../models_organization_org_info/OrgInfo-class.md)?]
+[[selectedOrganization](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/selectedOrganization.md)] [↔ [OrgInfo](../models_organization_org_info/OrgInfo-class.md)]
 :   Represents information about the selected organization.
     ::: features
     getter/setter pair
@@ -160,7 +172,7 @@ Inheritance
     inherited
     :::
 
-[[initialise](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/initialise.md)][([[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)?] org]) → void ]
+[[initialise](../view_model_pre_auth_view_models_signup_details_view_model/SignupDetailsViewModel/initialise.md)][([[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)] org]) → void ]
 :   Initializes the greeting message for a selected organization.
 
 [[noSuchMethod](https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html)][([[[Invocation](https://api.flutter.dev/flutter/dart-core/Invocation-class.md)] invocation]) → dynamic ]
@@ -228,3 +240,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

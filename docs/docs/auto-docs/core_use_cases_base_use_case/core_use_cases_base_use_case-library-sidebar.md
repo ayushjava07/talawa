@@ -1,0 +1,5 @@
+1.  [Classes](./#classes)
+2.  [BaseUseCase](./BaseUseCase-class.md)
+3.  [IdParams](./IdParams-class.md)
+4.  [NoParams](./NoParams-class.md)
+5.  [PaginationParams](./PaginationParams-class.md)

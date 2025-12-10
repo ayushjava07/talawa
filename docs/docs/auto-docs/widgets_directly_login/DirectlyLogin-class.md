@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [widgets/directly_login.dart](../widgets_directly_login/)
+3.  DirectlyLogin class
+
+
+DirectlyLogin
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # DirectlyLogin class
@@ -25,13 +43,13 @@ Inheritance
 
 Available extensions
 
-:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+:   -   [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
 
 
 
 ## Constructors
 
-[[DirectlyLogin](../widgets_directly_login/DirectlyLogin/DirectlyLogin.md)][]
+[[DirectlyLogin.new](../widgets_directly_login/DirectlyLogin/DirectlyLogin.md)][]
 
 :   ::: 
     const
@@ -69,18 +87,18 @@ Available extensions
 
 ## Methods
 
-[[animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)] ]
+[[animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions/animate.html)][ [→ [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)] ]
 
 :   Available on
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html),
     provided by the
-    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/AnimateWidgetExtensions.html)
+    [AnimateWidgetExtensions](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/AnimateWidgetExtensions.html)
     extension
 
     Wraps the target
     [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
     in an
-    [Animate](https://pub.dev/documentation/flutter_animate/4.5.0/flutter_animate/Animate-class.html)
+    [Animate](https://pub.dev/documentation/flutter_animate/4.5.2/flutter_animate/Animate-class.html)
     instance, and returns the instance for chaining calls. Ex.
     `myWidget.` is equivalent to `Animate(child: myWidget)`.
 
@@ -181,3 +199,6 @@ Available extensions
 
 
 
+
+
+ talawa 1.0.0+1 

@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [view_model/access_request_view_model.dart](../view_model_access_request_view_model/)
+3.  AccessScreenViewModel class
+
+
+AccessScreenViewModel
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # AccessScreenViewModel class
@@ -22,7 +40,7 @@ Inheritance
 
 ## Constructors
 
-[AccessScreenViewModel](../view_model_access_request_view_model/AccessScreenViewModel/AccessScreenViewModel.md)
+[AccessScreenViewModel.new](../view_model_access_request_view_model/AccessScreenViewModel/AccessScreenViewModel.md)
 
 :   
 
@@ -60,12 +78,6 @@ Inheritance
     getter/setter pair
     :::
 
-[[orgId](../view_model_access_request_view_model/AccessScreenViewModel/orgId.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)]
-:   org identifier.
-    ::: features
-    getter/setter pair
-    :::
-
 [[runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)] [→ [Type](https://api.flutter.dev/flutter/dart-core/Type-class.html)]
 :   A representation of the runtime type of the object.
     ::: features
@@ -94,13 +106,13 @@ Inheritance
     inherited
     :::
 
-[dispose](https://api.flutter.dev/flutter/foundation/ChangeNotifier/dispose.html) [→ void ]
+[dispose](../view_model_access_request_view_model/AccessScreenViewModel/dispose.md) [→ void ]
 :   Discards any resources used by the object. After this is called, the
     object is not in a usable state and should be discarded (calls to
     [addListener](https://api.flutter.dev/flutter/foundation/ChangeNotifier/addListener.md)
     will throw after the object is disposed).
     ::: features
-    inherited
+    override
     :::
 
 [[initialise](../view_model_access_request_view_model/AccessScreenViewModel/initialise.md)][([[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)] org]) [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
@@ -168,3 +180,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

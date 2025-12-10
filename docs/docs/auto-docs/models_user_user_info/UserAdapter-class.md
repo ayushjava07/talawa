@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [models/user/user_info.dart](../models_user_user_info/)
+3.  UserAdapter class
+
+
+UserAdapter
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # UserAdapter class
@@ -17,7 +35,7 @@ Inheritance
 
 ## Constructors
 
-[UserAdapter](../models_user_user_info/UserAdapter/UserAdapter.md)
+[UserAdapter.new](../models_user_user_info/UserAdapter/UserAdapter.md)
 
 :   
 
@@ -99,3 +117,6 @@ Inheritance
 
 
 
+
+
+ talawa 1.0.0+1 

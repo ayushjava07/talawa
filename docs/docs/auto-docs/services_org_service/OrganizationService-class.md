@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [services/org_service.dart](../services_org_service/)
+3.  OrganizationService class
+
+
+OrganizationService
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # OrganizationService class
@@ -16,7 +34,7 @@ Services include:
 
 ## Constructors
 
-[OrganizationService](../services_org_service/OrganizationService/OrganizationService.md)
+[OrganizationService.new](../services_org_service/OrganizationService/OrganizationService.md)
 
 :   
 
@@ -83,3 +101,6 @@ Services include:
 
 
 
+
+
+ talawa 1.0.0+1 

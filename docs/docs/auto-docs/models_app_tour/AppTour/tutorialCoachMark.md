@@ -1,4 +1,23 @@
 
+
+
+
+menu
+
+1.  [talawa](../../index.md)
+2.  [models/app_tour.dart](../../models_app_tour/)
+3.  [AppTour](../../models_app_tour/AppTour-class.md)
+4.  tutorialCoachMark property
+
+
+tutorialCoachMark
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # tutorialCoachMark property
@@ -6,7 +25,7 @@
 </div>
 
 
-[TutorialCoachMark](https://pub.dev/documentation/tutorial_coach_mark/1.2.12/tutorial_coach_mark/TutorialCoachMark-class.html)
+[TutorialCoachMark](https://pub.dev/documentation/tutorial_coach_mark/1.3.3/tutorial_coach_mark/TutorialCoachMark-class.html)
 tutorialCoachMark
 
 
@@ -44,3 +63,6 @@ late TutorialCoachMark tutorialCoachMark;
 
 
 
+
+
+ talawa 1.0.0+1 

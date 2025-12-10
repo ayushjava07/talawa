@@ -1,4 +1,22 @@
 
+
+
+
+menu
+
+1.  [talawa](../index.md)
+2.  [models/user/user_info.dart](../models_user_user_info/)
+3.  User class
+
+
+User
+
+
+ dark_mode   light_mode 
+
+
+
+
 <div>
 
 # User class
@@ -26,11 +44,11 @@ Annotations
 
 ## Constructors
 
-[[User](../models_user_user_info/User/User.md)][]
+[[User.new](../models_user_user_info/User/User.md)][]
 
 :   
 
-[[User.fromJson](../models_user_user_info/User/User.fromJson.md)][([[[Map](https://api.flutter.dev/flutter/dart-core/Map-class.md)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)], dynamic\>]] json, )]
+[[User.fromJson](../models_user_user_info/User/User.fromJson.md)][([[[Map](https://api.flutter.dev/flutter/dart-core/Map-class.md)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)], dynamic\>]] json])]
 
 :   ::: 
     factory
@@ -39,12 +57,6 @@ Annotations
 
 
 ## Properties
-
-[[adminFor](../models_user_user_info/User/adminFor.md)] [↔ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]?]
-:   HiveField for all organisations user is admin of.
-    ::: features
-    getter/setter pair
-    :::
 
 [[authToken](../models_user_user_info/User/authToken.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
 :   HiveField for authToken.
@@ -59,28 +71,22 @@ Annotations
     no setterinherited
     :::
 
-[[createdOrganizations](../models_user_user_info/User/createdOrganizations.md)] [↔ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]?]
-:   HiveField for all organisations created by user.
-    ::: features
-    getter/setter pair
-    :::
-
 [[email](../models_user_user_info/User/email.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
 :   HiveField for user\'s Email.
     ::: features
     getter/setter pair
     :::
 
-[[firstName](../models_user_user_info/User/firstName.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
-:   HiveField for user\'s first name.
+[[firstName](../models_user_user_info/User/firstName.md)] [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
+:   First name of the user.
     ::: features
-    getter/setter pair
+    no setter
     :::
 
-[[hashCode](https://api.flutter.dev/flutter/dart-core/Object/hashCode.html)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
+[[hashCode](../models_user_user_info/User/hashCode.md)] [→ [int](https://api.flutter.dev/flutter/dart-core/int-class.html)]
 :   The hash code for this object.
     ::: features
-    no setterinherited
+    no setteroverride
     :::
 
 [[id](../models_user_user_info/User/id.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
@@ -114,14 +120,20 @@ Annotations
     no setterinherited
     :::
 
-[[lastName](../models_user_user_info/User/lastName.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
-:   HiveField for user\'s last name.
+[[lastName](../models_user_user_info/User/lastName.md)] [→ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
+:   Last name of the user.
+    ::: features
+    no setter
+    :::
+
+[[membershipRequests](../models_user_user_info/User/membershipRequests.md)] [↔ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]?]
+:   HiveField for all organisations user has sent membership request.
     ::: features
     getter/setter pair
     :::
 
-[[membershipRequests](../models_user_user_info/User/membershipRequests.md)] [↔ [List](https://api.flutter.dev/flutter/dart-core/List-class.html)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]?]
-:   HiveField for all organisations user has sent membership request.
+[[name](../models_user_user_info/User/name.md)] [↔ [String](https://api.flutter.dev/flutter/dart-core/String-class.html)?]
+:   HiveField for user\'s name.
     ::: features
     getter/setter pair
     :::
@@ -154,9 +166,6 @@ Annotations
     inherited
     :::
 
-[print](../models_user_user_info/User/print.md) [→ void ]
-:   Method to print the User details.
-
 [[save](https://pub.dev/documentation/hive/2.2.3/hive/HiveObjectMixin/save.html)][ [→ [Future](https://api.flutter.dev/flutter/dart-core/Future-class.html)\<[void\>]] ]
 :   Persists this object.
     ::: features
@@ -172,26 +181,20 @@ Annotations
 [[update](../models_user_user_info/User/update.md)][([[[User](../models_user_user_info/User-class.md)] details]) → void ]
 :   Method to update the user details.
 
-[[updateAdminFor](../models_user_user_info/User/updateAdminFor.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]] orgList]) → void ]
-:   Method to update adminFor List.
-
-[[updateCreatedOrg](../models_user_user_info/User/updateCreatedOrg.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]] orgList]) → void ]
-:   Method to updated createdOrganisation list.
-
-[[updateJoinedOrg](../models_user_user_info/User/updateJoinedOrg.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]] orgList]) → void ]
+[[updateJoinedOrg](../models_user_user_info/User/updateJoinedOrg.md)][([[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)] org]) → void ]
 :   Method to updated joinedOrganisation list.
 
-[[updateMemberRequestOrg](../models_user_user_info/User/updateMemberRequestOrg.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[OrgInfo](../models_organization_org_info/OrgInfo-class.md)]\>]] orgList]) → void ]
+[[updateMemberRequestOrg](../models_user_user_info/User/updateMemberRequestOrg.md)][([[[List](https://api.flutter.dev/flutter/dart-core/List-class.md)[\<[[String](https://api.flutter.dev/flutter/dart-core/String-class.html)]\>]] orgList]) → void ]
 :   Method to update membershipRequests List.
 
 
 
 ## Operators
 
-[[operator ==](https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html)][([[[Object](https://api.flutter.dev/flutter/dart-core/Object-class.md)] other]) [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)] ]
+[[operator ==](../models_user_user_info/User/operator_equals.md)][([[[Object](https://api.flutter.dev/flutter/dart-core/Object-class.md)] other]) [→ [bool](https://api.flutter.dev/flutter/dart-core/bool-class.html)] ]
 :   The equality operator.
     ::: features
-    inherited
+    override
     :::
 
 
@@ -212,3 +215,6 @@ Annotations
 
 
 
+
+
+ talawa 1.0.0+1 
