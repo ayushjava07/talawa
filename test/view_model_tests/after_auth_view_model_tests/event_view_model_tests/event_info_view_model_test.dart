@@ -360,5 +360,160 @@ void main() {
       expect(model.categories[0].name, 'Category 1');
       expect(model.categories[1].name, 'Category 2');
     });
+
+    // ============================================================
+    // NULL RESPONSE TESTS - Cover defensive null checking branches
+    // ============================================================
+
+    test('fetchCategories handles null response gracefully', () async {
+      final Event event1 = Event(id: "1");
+      model.event = event1;
+      model.categories.clear();
+
+      final eventService = getAndRegisterEventService();
+      when(eventService.fetchAgendaCategories("XYZ"))
+          .thenAnswer((_) async => null);
+
+      await model.fetchCategories();
+
+      // Should not crash, categories should remain empty
+      expect(model.categories.length, 0);
+    });
+
+    test('fetchAgendaItems handles null response gracefully', () async {
+      final Event event1 = Event(id: "1");
+      model.event = event1;
+      model.agendaItems.clear();
+
+      final eventService = getAndRegisterEventService();
+      when(eventService.fetchAgendaItems('1'))
+          .thenAnswer((_) async => null);
+
+      await model.fetchAgendaItems();
+
+      // Should not crash, agendaItems should remain empty
+      expect(model.agendaItems.length, 0);
+    });
+
+    test('createAgendaItem handles null response gracefully', () async {
+      final Event event1 = Event(id: "1");
+      model.event = event1;
+
+      final eventService = getAndRegisterEventService();
+      when(
+        eventService.createAgendaItem({
+          'title': 'Test Agenda',
+          'sequence': 1,
+          'description': 'desc',
+          'duration': '1h',
+          'organizationId': 'XYZ',
+          'attachments': [],
+          'relatedEventId': model.event.id,
+          'urls': [],
+          'categories': ['cat1'],
+        }),
+      ).thenAnswer((_) async => null);
+
+      final result = await model.createAgendaItem(
+        title: 'Test Agenda',
+        duration: '1h',
+        attachments: [],
+        categories: ['cat1'],
+        description: 'desc',
+        sequence: 1,
+        urls: [],
+      );
+
+      // Should return null when service returns null
+      expect(result, isNull);
+    });
+
+    test('createVolunteerGroup handles null response gracefully', () async {
+      final Event event1 = Event(id: "1");
+      model.event = event1;
+
+      final eventService = getAndRegisterEventService();
+      when(
+        eventService.createVolunteerGroup({
+          'eventId': "1",
+          'name': 'Group 1',
+          'volunteersRequired': 10,
+        }),
+      ).thenAnswer((_) async => null);
+
+      final newGroup = await model.createVolunteerGroup(event1, 'Group 1', 10);
+
+      // Should return null when service returns null
+      expect(newGroup, isNull);
+    });
+
+    test('updateAgendaItemSequence handles null response gracefully', () async {
+      final Event event1 = Event(id: "1");
+      model.event = event1;
+
+      final eventService = getAndRegisterEventService();
+      model.agendaItems.clear();
+      model.agendaItems.addAll([
+        EventAgendaItem(id: '1', title: 'Item 1', sequence: 1),
+      ]);
+
+      when(
+        eventService.updateAgendaItem('1', {'sequence': 2}),
+      ).thenAnswer((_) async => null);
+
+      // Should handle gracefully without crashing
+      await model.updateAgendaItemSequence('1', 2);
+
+      // Original item should remain unchanged
+      expect(model.agendaItems.first.sequence, 1);
+    });
+
+    test('fetchCategories handles QueryResult with null data gracefully', () async {
+      final Event event1 = Event(id: "1");
+      model.event = event1;
+      model.categories.clear();
+
+      final eventService = getAndRegisterEventService();
+      final mockResult = QueryResult(
+        source: QueryResultSource.network,
+        data: null,
+        options: QueryOptions(
+          document: gql(
+            EventQueries().fetchAgendaItemCategoriesByOrganization('XYZ'),
+          ),
+        ),
+      );
+
+      when(eventService.fetchAgendaCategories("XYZ"))
+          .thenAnswer((_) async => mockResult);
+
+      await model.fetchCategories();
+
+      // Should not crash, categories should remain empty
+      expect(model.categories.length, 0);
+    });
+
+    test('fetchAgendaItems handles QueryResult with null data gracefully', () async {
+      final Event event1 = Event(id: "1");
+      model.event = event1;
+      model.agendaItems.clear();
+
+      final eventService = getAndRegisterEventService();
+      final mockResult = QueryResult(
+        source: QueryResultSource.network,
+        data: null,
+        options: QueryOptions(
+          document: gql(EventQueries().fetchAgendaItemsByEvent('1')),
+        ),
+      );
+
+      when(eventService.fetchAgendaItems('1'))
+          .thenAnswer((_) async => mockResult);
+
+      await model.fetchAgendaItems();
+
+      // Should not crash, agendaItems should remain empty
+      expect(model.agendaItems.length, 0);
+    });
   });
 }

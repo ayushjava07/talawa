@@ -31,6 +31,9 @@ class NavigationService {
   /// **returns**:
   /// * `Future<dynamic>`: resolves if the Screen was succesfully pushed.
   Future<dynamic> pushScreen(String routeName, {dynamic arguments}) {
+    if (navigatorKey.currentState == null) {
+      return Future.value(null);
+    }
     return navigatorKey.currentState!
         .pushNamed(routeName, arguments: arguments);
   }
@@ -44,6 +47,9 @@ class NavigationService {
   /// **returns**:
   /// * `Future<dynamic>`: resolves if the Screen was succesfully popAndPushed.
   Future<dynamic> popAndPushScreen(String routeName, {dynamic arguments}) {
+    if (navigatorKey.currentState == null) {
+      return Future.value(null);
+    }
     navigatorKey.currentState!.pop();
     return pushScreen(routeName, arguments: arguments);
   }
@@ -57,6 +63,9 @@ class NavigationService {
   /// **returns**:
   /// * `Future<dynamic>`: resolves if the Screen was succesfully pushedReplacementScreen.
   Future<dynamic> pushReplacementScreen(String routeName, {dynamic arguments}) {
+    if (navigatorKey.currentState == null) {
+      return Future.value(null);
+    }
     return navigatorKey.currentState!
         .pushReplacementNamed(routeName, arguments: arguments);
   }
@@ -75,6 +84,9 @@ class NavigationService {
     String tillRoute, {
     dynamic arguments,
   }) {
+    if (navigatorKey.currentState == null) {
+      return Future.value(null);
+    }
     return navigatorKey.currentState!.pushNamedAndRemoveUntil(
       routeName,
       ModalRoute.withName(tillRoute),
@@ -90,6 +102,9 @@ class NavigationService {
   /// **returns**:
   ///   None
   void pushDialog(Widget dialog) {
+    if (navigatorKey.currentContext == null) {
+      return;
+    }
     showDialog(
       context: navigatorKey.currentContext!,
       barrierColor: Colors.transparent,
@@ -112,6 +127,9 @@ class NavigationService {
     String message, {
     Duration duration = const Duration(seconds: 2),
   }) {
+    if (navigatorKey.currentContext == null) {
+      return;
+    }
     ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
       SnackBar(
         behavior: SnackBarBehavior.floating,
@@ -137,6 +155,9 @@ class NavigationService {
     String errorMessage,
     MessageType messageType,
   ) {
+    if (navigatorKey.currentContext == null) {
+      return;
+    }
     final Duration duration = Duration(milliseconds: errorMessage.length * 80);
     ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
       SnackBar(
@@ -161,6 +182,9 @@ class NavigationService {
   /// **returns**:
   ///   None
   void showTalawaErrorDialog(String errorMessage, MessageType messageType) {
+    if (navigatorKey.currentContext == null) {
+      return;
+    }
     showDialog(
       context: navigatorKey.currentContext!,
       barrierColor: Colors.transparent,
@@ -182,6 +206,9 @@ class NavigationService {
   /// **returns**:
   ///   None
   void showCustomToast(String msg) {
+    if (navigatorKey.currentContext == null) {
+      return;
+    }
     DelightToastBar(
       builder: (context) {
         return ToastCard(

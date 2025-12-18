@@ -384,5 +384,119 @@ void main() {
       expect(group.name, "Old Name");
       expect(group.volunteersRequired, 0);
     });
+
+    // ============================================================
+    // NULL RESPONSE TESTS - Cover defensive null checking branches
+    // ============================================================
+
+    test("Test addVolunteerToGroup handles null response gracefully", () async {
+      final mockEventService = locator<EventService>();
+      
+      when(
+        mockEventService.addVolunteerToGroup({
+          'eventId': "1",
+          'userId': "volunteer1",
+          'groupId': "group1",
+        }),
+      ).thenAnswer((_) async => null);
+
+      String log = "";
+      await runZonedGuarded(
+        () async {
+          await model.addVolunteerToGroup("volunteer1", "1", "group1");
+        },
+        (error, stack) {
+          // Expected to throw exception
+        },
+        zoneSpecification: ZoneSpecification(
+          print: (self, parent, zone, line) {
+            log = line;
+          },
+        ),
+      );
+
+      // Should handle null gracefully
+      expect(model.volunteers.length, 0);
+    });
+
+    test("Test deleteVolunteerGroup handles null response gracefully", () async {
+      final mockEventService = locator<EventService>();
+      
+      when(mockEventService.removeVolunteerGroup({"id": "group1"}))
+          .thenAnswer((_) async => null);
+
+      String log = "";
+      await runZonedGuarded(
+        () async {
+          await model.deleteVolunteerGroup("group1");
+        },
+        (error, stack) {
+          // Expected to throw exception for null response
+        },
+        zoneSpecification: ZoneSpecification(
+          print: (self, parent, zone, line) {
+            log = line;
+          },
+        ),
+      );
+
+      // Should handle null gracefully
+      verify(mockEventService.removeVolunteerGroup({"id": "group1"})).called(1);
+    });
+
+    test("Test removeVolunteerFromGroup handles null response gracefully", () async {
+      final mockEventService = locator<EventService>();
+      final int prevLength = model.volunteers.length;
+
+      when(
+        mockEventService.removeVolunteerFromGroup({
+          'id': 'volunteer1',
+        }),
+      ).thenAnswer((_) async => null);
+
+      await model.removeVolunteerFromGroup("volunteer1");
+
+      // Should not crash, volunteers should remain unchanged
+      expect(model.volunteers.length, prevLength);
+    });
+
+    test("Test updateVolunteerGroup handles null response gracefully", () async {
+      final mockEventService = locator<EventService>();
+      final group = EventVolunteerGroup(
+        id: "group1",
+        name: "Old Name",
+        volunteersRequired: 5,
+      );
+
+      when(
+        mockEventService.updateVolunteerGroup({
+          'id': group.id,
+          'data': {
+            'eventId': "1",
+            'name': "New Name",
+            'volunteersRequired': 10,
+          },
+        }),
+      ).thenAnswer((_) async => null);
+
+      String log = "";
+      await runZonedGuarded(
+        () async {
+          await model.updateVolunteerGroup(group, "1", "New Name", 10);
+        },
+        (error, stack) {
+          // Expected to throw exception for null response
+        },
+        zoneSpecification: ZoneSpecification(
+          print: (self, parent, zone, line) {
+            log = line;
+          },
+        ),
+      );
+
+      // Original values should remain unchanged
+      expect(group.name, "Old Name");
+      expect(group.volunteersRequired, 5);
+    });
   });
 }

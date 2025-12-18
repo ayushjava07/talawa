@@ -210,10 +210,14 @@ class EditAgendaItemViewModel extends BaseModel {
         'categories': categoryIds,
       };
 
-      await _eventService.updateAgendaItem(
+      final result = await _eventService.updateAgendaItem(
         _agendaItem.id!,
         updatedAgendaItem,
-      ) as QueryResult<Object?>;
+      );
+      
+      if (result == null) {
+        throw Exception('Failed to update agenda item');
+      }
     } catch (e) {
       print('Error updating agenda item: $e');
     }

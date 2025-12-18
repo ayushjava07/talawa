@@ -619,5 +619,69 @@ void main() {
       await tester.pumpAndSettle();
       expect(mockKey.currentState!.canPop(), false);
     });
+
+    // ============================================================
+    // NULL STATE/CONTEXT TESTS - Cover defensive null checking
+    // ============================================================
+
+    test('pushScreen returns null when currentState is null', () async {
+      final navService = NavigationService();
+      // navigatorKey.currentState is null before app is built
+      final result = await navService.pushScreen('/test-screen');
+      expect(result, isNull);
+    });
+
+    test('popAndPushScreen returns null when currentState is null', () async {
+      final navService = NavigationService();
+      final result = await navService.popAndPushScreen('/test-screen');
+      expect(result, isNull);
+    });
+
+    test('pushReplacementScreen returns null when currentState is null', () async {
+      final navService = NavigationService();
+      final result = await navService.pushReplacementScreen('/test-screen');
+      expect(result, isNull);
+    });
+
+    test('removeAllAndPush returns null when currentState is null', () async {
+      final navService = NavigationService();
+      final result = await navService.removeAllAndPush('/test', '/home');
+      expect(result, isNull);
+    });
+
+    test('pushDialog does nothing when currentContext is null', () {
+      final navService = NavigationService();
+      // Should not crash
+      navService.pushDialog(const AlertDialog(title: Text('Test')));
+      // No assertion error means it handled null gracefully
+    });
+
+    test('showSnackBar does nothing when currentContext is null', () {
+      final navService = NavigationService();
+      // Should not crash
+      navService.showSnackBar('Test message');
+      // No assertion error means it handled null gracefully
+    });
+
+    test('showTalawaErrorSnackBar does nothing when currentContext is null', () {
+      final navService = NavigationService();
+      // Should not crash
+      navService.showTalawaErrorSnackBar('Error', MessageType.error);
+      // No assertion error means it handled null gracefully
+    });
+
+    test('showTalawaErrorDialog does nothing when currentContext is null', () {
+      final navService = NavigationService();
+      // Should not crash
+      navService.showTalawaErrorDialog('Error', MessageType.error);
+      // No assertion error means it handled null gracefully
+    });
+
+    test('showCustomToast does nothing when currentContext is null', () {
+      final navService = NavigationService();
+      // Should not crash
+      navService.showCustomToast('Test toast');
+      // No assertion error means it handled null gracefully
+    });
   });
 }
