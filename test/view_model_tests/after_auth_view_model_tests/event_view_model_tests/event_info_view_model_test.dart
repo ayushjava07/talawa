@@ -386,8 +386,7 @@ void main() {
       model.agendaItems.clear();
 
       final eventService = getAndRegisterEventService();
-      when(eventService.fetchAgendaItems('1'))
-          .thenAnswer((_) async => null);
+      when(eventService.fetchAgendaItems('1')).thenAnswer((_) async => null);
 
       await model.fetchAgendaItems();
 
@@ -468,7 +467,8 @@ void main() {
       expect(model.agendaItems.first.sequence, 1);
     });
 
-    test('fetchCategories handles QueryResult with null data gracefully', () async {
+    test('fetchCategories handles QueryResult with null data gracefully',
+        () async {
       final Event event1 = Event(id: "1");
       model.event = event1;
       model.categories.clear();
@@ -493,7 +493,8 @@ void main() {
       expect(model.categories.length, 0);
     });
 
-    test('fetchAgendaItems handles QueryResult with null data gracefully', () async {
+    test('fetchAgendaItems handles QueryResult with null data gracefully',
+        () async {
       final Event event1 = Event(id: "1");
       model.event = event1;
       model.agendaItems.clear();

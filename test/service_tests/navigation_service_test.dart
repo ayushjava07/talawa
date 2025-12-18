@@ -637,7 +637,8 @@ void main() {
       expect(result, isNull);
     });
 
-    test('pushReplacementScreen returns null when currentState is null', () async {
+    test('pushReplacementScreen returns null when currentState is null',
+        () async {
       final navService = NavigationService();
       final result = await navService.pushReplacementScreen('/test-screen');
       expect(result, isNull);
@@ -663,7 +664,8 @@ void main() {
       // No assertion error means it handled null gracefully
     });
 
-    test('showTalawaErrorSnackBar does nothing when currentContext is null', () {
+    test('showTalawaErrorSnackBar does nothing when currentContext is null',
+        () {
       final navService = NavigationService();
       // Should not crash
       navService.showTalawaErrorSnackBar('Error', MessageType.error);

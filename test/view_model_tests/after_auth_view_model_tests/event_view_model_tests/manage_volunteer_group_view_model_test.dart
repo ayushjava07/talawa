@@ -391,7 +391,7 @@ void main() {
 
     test("Test addVolunteerToGroup handles null response gracefully", () async {
       final mockEventService = locator<EventService>();
-      
+
       when(
         mockEventService.addVolunteerToGroup({
           'eventId': "1",
@@ -400,7 +400,6 @@ void main() {
         }),
       ).thenAnswer((_) async => null);
 
-      String log = "";
       await runZonedGuarded(
         () async {
           await model.addVolunteerToGroup("volunteer1", "1", "group1");
@@ -408,24 +407,19 @@ void main() {
         (error, stack) {
           // Expected to throw exception
         },
-        zoneSpecification: ZoneSpecification(
-          print: (self, parent, zone, line) {
-            log = line;
-          },
-        ),
       );
 
       // Should handle null gracefully
       expect(model.volunteers.length, 0);
     });
 
-    test("Test deleteVolunteerGroup handles null response gracefully", () async {
+    test("Test deleteVolunteerGroup handles null response gracefully",
+        () async {
       final mockEventService = locator<EventService>();
-      
+
       when(mockEventService.removeVolunteerGroup({"id": "group1"}))
           .thenAnswer((_) async => null);
 
-      String log = "";
       await runZonedGuarded(
         () async {
           await model.deleteVolunteerGroup("group1");
@@ -433,18 +427,14 @@ void main() {
         (error, stack) {
           // Expected to throw exception for null response
         },
-        zoneSpecification: ZoneSpecification(
-          print: (self, parent, zone, line) {
-            log = line;
-          },
-        ),
       );
 
       // Should handle null gracefully
       verify(mockEventService.removeVolunteerGroup({"id": "group1"})).called(1);
     });
 
-    test("Test removeVolunteerFromGroup handles null response gracefully", () async {
+    test("Test removeVolunteerFromGroup handles null response gracefully",
+        () async {
       final mockEventService = locator<EventService>();
       final int prevLength = model.volunteers.length;
 
@@ -460,7 +450,8 @@ void main() {
       expect(model.volunteers.length, prevLength);
     });
 
-    test("Test updateVolunteerGroup handles null response gracefully", () async {
+    test("Test updateVolunteerGroup handles null response gracefully",
+        () async {
       final mockEventService = locator<EventService>();
       final group = EventVolunteerGroup(
         id: "group1",
@@ -479,7 +470,6 @@ void main() {
         }),
       ).thenAnswer((_) async => null);
 
-      String log = "";
       await runZonedGuarded(
         () async {
           await model.updateVolunteerGroup(group, "1", "New Name", 10);
@@ -487,11 +477,6 @@ void main() {
         (error, stack) {
           // Expected to throw exception for null response
         },
-        zoneSpecification: ZoneSpecification(
-          print: (self, parent, zone, line) {
-            log = line;
-          },
-        ),
       );
 
       // Original values should remain unchanged

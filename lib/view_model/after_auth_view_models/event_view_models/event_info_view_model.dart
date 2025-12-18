@@ -141,8 +141,8 @@ class EventInfoViewModel extends BaseModel {
         'volunteersRequired': volunteersRequired,
       };
 
-      final result = await locator<EventService>()
-          .createVolunteerGroup(variables);
+      final result =
+          await locator<EventService>().createVolunteerGroup(variables);
 
       if (result == null ||
           result is! QueryResult ||
@@ -201,7 +201,7 @@ class EventInfoViewModel extends BaseModel {
       if (result == null || result is! QueryResult || result.data == null) {
         return;
       }
-      
+
       final List categoryJson =
           result.data!['agendaItemCategoriesByOrganization'] as List;
       _categories = categoryJson
@@ -240,7 +240,7 @@ class EventInfoViewModel extends BaseModel {
       if (result == null || result is! QueryResult || result.data == null) {
         return;
       }
-      
+
       final List agendaJson = result.data!['agendaItemByEvent'] as List;
       _agendaItems = agendaJson
           .map((json) => EventAgendaItem.fromJson(json as Map<String, dynamic>))
@@ -289,8 +289,10 @@ class EventInfoViewModel extends BaseModel {
         'organizationId': userConfig.currentOrg.id,
       };
       final result = await locator<EventService>().createAgendaItem(variables);
-      
-      if (result == null || result is! QueryResult || result.data == null || 
+
+      if (result == null ||
+          result is! QueryResult ||
+          result.data == null ||
           result.data!['createAgendaItem'] == null) {
         throw Exception('Failed to create agenda item or no data returned');
       }

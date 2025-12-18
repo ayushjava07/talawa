@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:talawa/locator.dart';
 import 'package:talawa/models/events/event_agenda_category.dart';
 import 'package:talawa/models/events/event_agenda_item.dart';
@@ -214,7 +213,7 @@ class EditAgendaItemViewModel extends BaseModel {
         _agendaItem.id!,
         updatedAgendaItem,
       );
-      
+
       if (result == null) {
         throw Exception('Failed to update agenda item');
       }

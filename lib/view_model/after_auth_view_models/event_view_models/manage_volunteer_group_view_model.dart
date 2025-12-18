@@ -100,13 +100,13 @@ class ManageVolunteerGroupViewModel extends BaseModel {
         'userId': volunteerId,
         'groupId': groupId,
       };
-      final result = await locator<EventService>()
-          .addVolunteerToGroup(variables);
-      
+      final result =
+          await locator<EventService>().addVolunteerToGroup(variables);
+
       if (result == null || result is! QueryResult || result.data == null) {
         throw Exception('Failed to add volunteer to group');
       }
-      
+
       final data = result.data!;
       if (data['createEventVolunteer'] == null) {
         return;
@@ -133,13 +133,13 @@ class ManageVolunteerGroupViewModel extends BaseModel {
       final variables = {
         'id': groupId,
       };
-      final result = await locator<EventService>()
-          .removeVolunteerGroup(variables);
-      
+      final result =
+          await locator<EventService>().removeVolunteerGroup(variables);
+
       if (result == null || result is! QueryResult) {
         throw Exception('Failed to remove volunteer group');
       }
-      
+
       final data = result.data;
 
       if (data != null && data['removeEventVolunteerGroup'] != null) {
@@ -162,14 +162,14 @@ class ManageVolunteerGroupViewModel extends BaseModel {
       final variables = {
         'id': volunteerId,
       };
-      final result = await locator<EventService>()
-          .removeVolunteerFromGroup(variables);
-      
+      final result =
+          await locator<EventService>().removeVolunteerFromGroup(variables);
+
       if (result == null || result is! QueryResult) {
         print('Failed to remove volunteer.');
         return;
       }
-      
+
       final data = result.data;
 
       if (data != null && data['removeEventVolunteer'] != null) {
@@ -210,8 +210,8 @@ class ManageVolunteerGroupViewModel extends BaseModel {
     };
 
     try {
-      final result = await locator<EventService>()
-          .updateVolunteerGroup(variables);
+      final result =
+          await locator<EventService>().updateVolunteerGroup(variables);
 
       if (result == null || result is! QueryResult || result.data == null) {
         throw Exception('Failed to update volunteer group');
