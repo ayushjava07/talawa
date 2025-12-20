@@ -5,6 +5,7 @@ import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:mockito/mockito.dart';
 import 'package:talawa/models/events/event_agenda_category.dart';
 import 'package:talawa/models/events/event_agenda_item.dart';
+import 'package:talawa/utils/event_queries.dart';
 import 'package:talawa/view_model/after_auth_view_models/event_view_models/edit_agenda_view_model.dart';
 
 import '../../../helpers/test_helpers.dart';
@@ -267,7 +268,7 @@ void main() {
         }),
       ).called(1);
     });
-    test('updateAgendaItem() handles null result gracefully', () async {
+    test('updateAgendaItem() handles empty data gracefully', () async {
       final mockEventService = getAndRegisterEventService();
 
       // Create a new model instance after setting up the mock
@@ -284,7 +285,13 @@ void main() {
           'urls': ['https://example.com'],
           'categories': ['cat1'],
         }),
-      ).thenAnswer((_) async => null);
+      ).thenAnswer((_) async => QueryResult(
+            source: QueryResultSource.network,
+            data: null,
+            options: QueryOptions(
+              document: gql(EventQueries().updateAgendaItem()),
+            ),
+          ));
 
       // Should handle gracefully without crashing
       await testModel.updateAgendaItem();

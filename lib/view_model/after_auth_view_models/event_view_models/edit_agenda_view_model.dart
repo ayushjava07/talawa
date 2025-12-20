@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:talawa/locator.dart';
 import 'package:talawa/models/events/event_agenda_category.dart';
 import 'package:talawa/models/events/event_agenda_item.dart';
@@ -214,20 +213,15 @@ class EditAgendaItemViewModel extends BaseModel {
         _agendaItem.id!,
         updatedAgendaItem,
       );
-      final queryResult = result as QueryResult?;
-      if (queryResult == null) {
-        print('Failed to update agenda item or no data returned');
-        return;
-      }
 
-      if (queryResult.hasException == true) {
+      if (result.hasException) {
         print(
-            "Error updating agenda item: ${queryResult.exception?.graphqlErrors}");
+            "Error updating agenda item: ${result.exception?.graphqlErrors}");
         return;
       }
 
-      if (queryResult.data == null ||
-          queryResult.data!['updateAgendaItem'] == null) {
+      if (result.data == null ||
+          result.data!['updateAgendaItem'] == null) {
         print('Failed to update agenda item or no data returned');
         return;
       }

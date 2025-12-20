@@ -707,7 +707,7 @@ void main() {
     // NULL RESULT TESTS - Test when GraphQL service returns null
     // ============================================================
 
-    test('addVolunteerToGroup handles null result gracefully', () async {
+    test('addVolunteerToGroup handles empty data gracefully', () async {
       final Event event = Event(id: "1");
       final EventVolunteerGroup group =
           EventVolunteerGroup(id: "group1", volunteers: []);
@@ -723,7 +723,13 @@ void main() {
           'userId': 'volunteer1',
           'groupId': 'group1',
         }),
-      ).thenAnswer((_) async => null);
+      ).thenAnswer((_) async => QueryResult(
+            source: QueryResultSource.network,
+            data: null,
+            options: QueryOptions(
+              document: gql(EventQueries().addVolunteerToGroup()),
+            ),
+          ));
 
       await model.addVolunteerToGroup('volunteer1', '1', 'group1');
 
@@ -731,7 +737,7 @@ void main() {
       expect(model.volunteers.length, initialVolunteersCount);
     });
 
-    test('deleteVolunteerGroup handles null result gracefully', () async {
+    test('deleteVolunteerGroup handles empty data gracefully', () async {
       final Event event = Event(id: "1");
       final EventVolunteerGroup group =
           EventVolunteerGroup(id: "group1", volunteers: []);
@@ -742,7 +748,13 @@ void main() {
 
       when(
         mockEventService.removeVolunteerGroup({'id': 'group1'}),
-      ).thenAnswer((_) async => null);
+      ).thenAnswer((_) async => QueryResult(
+            source: QueryResultSource.network,
+            data: null,
+            options: QueryOptions(
+              document: gql(EventQueries().removeEventVolunteerGroup()),
+            ),
+          ));
 
       // Should handle gracefully without crashing
       await model.deleteVolunteerGroup('group1');
@@ -751,7 +763,7 @@ void main() {
       expect(true, true);
     });
 
-    test('removeVolunteerFromGroup handles null result gracefully', () async {
+    test('removeVolunteerFromGroup handles empty data gracefully', () async {
       final Event event = Event(id: "1");
       final EventVolunteerGroup group =
           EventVolunteerGroup(id: "group1", volunteers: []);
@@ -763,7 +775,13 @@ void main() {
 
       when(
         mockEventService.removeVolunteerFromGroup({'id': 'volunteer1'}),
-      ).thenAnswer((_) async => null);
+      ).thenAnswer((_) async => QueryResult(
+            source: QueryResultSource.network,
+            data: null,
+            options: QueryOptions(
+              document: gql(EventQueries().removeVolunteerMutation()),
+            ),
+          ));
 
       await model.removeVolunteerFromGroup('volunteer1');
 
@@ -771,7 +789,7 @@ void main() {
       expect(model.volunteers.length, initialVolunteersCount);
     });
 
-    test('updateVolunteerGroup handles null result gracefully', () async {
+    test('updateVolunteerGroup handles empty data gracefully', () async {
       final Event event = Event(id: "1");
       final EventVolunteerGroup group = EventVolunteerGroup(
         id: "group1",
@@ -793,7 +811,13 @@ void main() {
             'volunteersRequired': 10,
           },
         }),
-      ).thenAnswer((_) async => null);
+      ).thenAnswer((_) async => QueryResult(
+            source: QueryResultSource.network,
+            data: null,
+            options: QueryOptions(
+              document: gql(EventQueries().updateVolunteerGroupMutation()),
+            ),
+          ));
 
       await model.updateVolunteerGroup(group, "1", "New Name", 10);
 

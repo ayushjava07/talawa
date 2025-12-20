@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:talawa/enums/enums.dart';
 import 'package:talawa/locator.dart';
 import 'package:talawa/models/events/event_agenda_category.dart';
@@ -144,26 +143,20 @@ class EventInfoViewModel extends BaseModel {
       final result =
           await locator<EventService>().createVolunteerGroup(variables);
 
-      final queryResult = result as QueryResult?;
-      if (queryResult == null) {
-        print('Failed to create volunteer group or no data returned');
-        return null;
-      }
-
-      //check for   GrapQL exceptions first
-      if (queryResult.hasException == true) {
+      // Check for GraphQL exceptions first
+      if (result.hasException) {
         print(
-            "Error creating volunteer group: ${queryResult.exception?.graphqlErrors}");
+            "Error creating volunteer group: ${result.exception?.graphqlErrors}");
         return null;
       }
 
-      if (queryResult.data == null ||
-          queryResult.data!['createEventVolunteerGroup'] == null) {
+      if (result.data == null ||
+          result.data!['createEventVolunteerGroup'] == null) {
         print('Failed to create volunteer group or no data returned');
         return null;
       }
 
-      final data = queryResult.data!['createEventVolunteerGroup'];
+      final data = result.data!['createEventVolunteerGroup'];
       final newGroup =
           EventVolunteerGroup.fromJson(data as Map<String, dynamic>);
 
@@ -210,25 +203,19 @@ class EventInfoViewModel extends BaseModel {
       final result = await locator<EventService>()
           .fetchAgendaCategories(userConfig.currentOrg.id!);
 
-      final queryResult = result as QueryResult?;
-      if (queryResult == null) {
-        print('Failed to fetch categories or no data returned');
-        return;
-      }
-
-      if (queryResult.hasException == true) {
+      if (result.hasException) {
         print(
-            "Error fetching categories: ${queryResult.exception?.graphqlErrors}");
+            "Error fetching categories: ${result.exception?.graphqlErrors}");
         return;
       }
 
-      if (queryResult.data == null) {
+      if (result.data == null) {
         print('Failed to fetch categories or no data returned');
         return;
       }
 
       final List categoryJson =
-          queryResult.data!['agendaItemCategoriesByOrganization'] as List;
+          result.data!['agendaItemCategoriesByOrganization'] as List;
       _categories = categoryJson
           .map((json) => AgendaCategory.fromJson(json as Map<String, dynamic>))
           .toList();
@@ -261,25 +248,19 @@ class EventInfoViewModel extends BaseModel {
   Future<void> fetchAgendaItems() async {
     try {
       final result = await locator<EventService>().fetchAgendaItems(event.id!);
-      final queryResult = result as QueryResult?;
 
-      if (queryResult == null) {
-        print('Failed to fetch agenda items or no data returned');
-        return;
-      }
-
-      if (queryResult.hasException == true) {
+      if (result.hasException) {
         print(
-            "Error fetching agenda items: ${queryResult.exception?.graphqlErrors}");
+            "Error fetching agenda items: ${result.exception?.graphqlErrors}");
         return;
       }
 
-      if (queryResult.data == null) {
+      if (result.data == null) {
         print('Failed to fetch agenda items or no data returned');
         return;
       }
 
-      final List agendaJson = queryResult.data!['agendaItemByEvent'] as List;
+      final List agendaJson = result.data!['agendaItemByEvent'] as List;
       _agendaItems = agendaJson
           .map((json) => EventAgendaItem.fromJson(json as Map<String, dynamic>))
           .toList();
@@ -327,25 +308,20 @@ class EventInfoViewModel extends BaseModel {
         'organizationId': userConfig.currentOrg.id,
       };
       final result = await locator<EventService>().createAgendaItem(variables);
-      final queryResult = result as QueryResult?;
-      if (queryResult == null) {
-        print('Failed to create agenda item or no data returned');
-        return null;
-      }
 
-      if (queryResult.hasException == true) {
+      if (result.hasException) {
         print(
-            "Error creating agenda item: ${queryResult.exception?.graphqlErrors}");
+            "Error creating agenda item: ${result.exception?.graphqlErrors}");
         return null;
       }
 
-      if (queryResult.data == null ||
-          queryResult.data!['createAgendaItem'] == null) {
+      if (result.data == null ||
+          result.data!['createAgendaItem'] == null) {
         print('Failed to create agenda item or no data returned');
         return null;
       }
 
-      final data = queryResult.data!['createAgendaItem'];
+      final data = result.data!['createAgendaItem'];
 
       final newAgendaItem =
           EventAgendaItem.fromJson(data as Map<String, dynamic>);
@@ -395,26 +371,21 @@ class EventInfoViewModel extends BaseModel {
         itemId,
         {'sequence': newSequence},
       );
-      final queryResult = result as QueryResult?;
-      if (queryResult == null) {
-        print('Failed to update agenda item sequence or no data returned');
-        return;
-      }
 
-      if (queryResult.hasException == true) {
+      if (result.hasException) {
         print(
-            "Error updating agenda item sequence: ${queryResult.exception?.graphqlErrors}");
+            "Error updating agenda item sequence: ${result.exception?.graphqlErrors}");
         return;
       }
 
-      if (queryResult.data == null ||
-          queryResult.data!['updateAgendaItem'] == null) {
+      if (result.data == null ||
+          result.data!['updateAgendaItem'] == null) {
         print('Failed to update agenda item sequence or no data returned');
         return;
       }
 
       final updatedItem = EventAgendaItem.fromJson(
-        queryResult.data!['updateAgendaItem'] as Map<String, dynamic>,
+        result.data!['updateAgendaItem'] as Map<String, dynamic>,
       );
       final index = _agendaItems.indexWhere((item) => item.id == itemId);
       if (index != -1) {

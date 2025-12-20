@@ -276,7 +276,13 @@ void main() {
       ]);
 
       when(eventService.deleteAgendaItem({"removeAgendaItemId": '1'}))
-          .thenAnswer((_) async => true);
+          .thenAnswer((_) async => QueryResult(
+                source: QueryResultSource.network,
+                data: {'deleteAgendaItem': true},
+                options: QueryOptions(
+                  document: gql(EventQueries().deleteAgendaItem()),
+                ),
+              ));
 
       await model.deleteAgendaItem('1');
 
@@ -856,7 +862,7 @@ void main() {
     // NULL RESULT TESTS - Test when GraphQL service returns null
     // ============================================================
 
-    test('createVolunteerGroup handles null result gracefully', () async {
+    test('createVolunteerGroup handles empty data gracefully', () async {
       final Event event1 = Event(id: "1");
       model.event = event1;
 
@@ -868,7 +874,13 @@ void main() {
           'name': 'Test Group',
           'volunteersRequired': 5,
         }),
-      ).thenAnswer((_) async => null);
+      ).thenAnswer((_) async => QueryResult(
+            source: QueryResultSource.network,
+            data: null,
+            options: QueryOptions(
+              document: gql(EventQueries().createVolunteerGroup()),
+            ),
+          ));
 
       // Should handle gracefully without crashing
       final result = await model.createVolunteerGroup(event1, 'Test Group', 5);
@@ -876,14 +888,21 @@ void main() {
       expect(result, isNull);
     });
 
-    test('fetchCategories handles null result gracefully', () async {
+    test('fetchCategories handles empty data gracefully', () async {
       final Event event1 = Event(id: "1");
       model.event = event1;
 
       final eventService = getAndRegisterEventService();
 
       when(eventService.fetchAgendaCategories("XYZ"))
-          .thenAnswer((_) async => null);
+          .thenAnswer((_) async => QueryResult(
+                source: QueryResultSource.network,
+                data: null,
+                options: QueryOptions(
+                  document: gql(
+                      EventQueries().fetchAgendaItemCategoriesByOrganization('XYZ')),
+                ),
+              ));
 
       // Should handle gracefully without crashing
       await model.fetchCategories();
@@ -892,13 +911,19 @@ void main() {
       expect(model.categories, isA<List>());
     });
 
-    test('fetchAgendaItems handles null result gracefully', () async {
+    test('fetchAgendaItems handles empty data gracefully', () async {
       final Event event1 = Event(id: "1");
       model.event = event1;
 
       final eventService = getAndRegisterEventService();
 
-      when(eventService.fetchAgendaItems('1')).thenAnswer((_) async => null);
+      when(eventService.fetchAgendaItems('1')).thenAnswer((_) async => QueryResult(
+            source: QueryResultSource.network,
+            data: null,
+            options: QueryOptions(
+              document: gql(EventQueries().fetchAgendaItemsByEvent('1')),
+            ),
+          ));
 
       // Should handle gracefully without crashing
       await model.fetchAgendaItems();
@@ -907,7 +932,7 @@ void main() {
       expect(model.agendaItems, isA<List>());
     });
 
-    test('createAgendaItem handles null result gracefully', () async {
+    test('createAgendaItem handles empty data gracefully', () async {
       final Event event1 = Event(id: "1");
       model.event = event1;
 
@@ -925,7 +950,13 @@ void main() {
           'urls': <String>[],
           'categories': <String>[],
         }),
-      ).thenAnswer((_) async => null);
+      ).thenAnswer((_) async => QueryResult(
+            source: QueryResultSource.network,
+            data: null,
+            options: QueryOptions(
+              document: gql(EventQueries().createAgendaItem()),
+            ),
+          ));
 
       // Should handle gracefully without crashing
       final result = await model.createAgendaItem(
@@ -939,7 +970,7 @@ void main() {
       expect(result, isNull);
     });
 
-    test('updateAgendaItemSequence handles null result gracefully', () async {
+    test('updateAgendaItemSequence handles empty data gracefully', () async {
       final Event event1 = Event(id: "1");
       model.event = event1;
 
@@ -951,7 +982,13 @@ void main() {
 
       when(
         eventService.updateAgendaItem('1', {'sequence': 2}),
-      ).thenAnswer((_) async => null);
+      ).thenAnswer((_) async => QueryResult(
+            source: QueryResultSource.network,
+            data: null,
+            options: QueryOptions(
+              document: gql(EventQueries().updateAgendaItem()),
+            ),
+          ));
 
       // Should handle gracefully without crashing
       await model.updateAgendaItemSequence('1', 2);
