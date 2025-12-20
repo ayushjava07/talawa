@@ -36,10 +36,10 @@ void main() {
     final model = EventInfoViewModel();
 
     test("test initialization", () async {
-      final Event event = Event(id: "1", isRegisterable: true, isRegistered: false);
+      final Event event =
+          Event(id: "1", isRegisterable: true, isRegistered: false);
       // ignore: prefer_const_constructors
-      final exploreEventsViewModel =
-          ExploreEventsViewModel();
+      final exploreEventsViewModel = ExploreEventsViewModel();
       // ignore: prefer_const_constructors
       final mockEventService = getAndRegisterEventService();
 
@@ -50,7 +50,7 @@ void main() {
           .thenAnswer((_) async => QueryResult(
                 source: QueryResultSource.network,
                 data: const {
-                  'agendaItemCategoriesByOrganization':  [],
+                  'agendaItemCategoriesByOrganization': [],
                 },
                 options: QueryOptions(
                   document: gql(
@@ -410,7 +410,9 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const [GraphQLError(message: 'Failed to fetch categories')],
+          graphqlErrors: const [
+            GraphQLError(message: 'Failed to fetch categories')
+          ],
         ),
         options: QueryOptions(
           document: gql(
@@ -440,7 +442,7 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const [
+          graphqlErrors: const [
             GraphQLError(message: 'Failed to fetch agenda items')
           ],
         ),
@@ -469,7 +471,7 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const [
+          graphqlErrors: const [
             GraphQLError(message: 'Failed to create agenda item')
           ],
         ),
@@ -518,7 +520,7 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const [
+          graphqlErrors: const [
             GraphQLError(message: 'Failed to create volunteer group')
           ],
         ),
@@ -559,7 +561,7 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const  [
+          graphqlErrors: const [
             GraphQLError(message: 'Failed to update agenda item sequence')
           ],
         ),

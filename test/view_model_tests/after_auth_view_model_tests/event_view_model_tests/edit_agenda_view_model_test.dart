@@ -42,7 +42,7 @@ void main() {
       expect(model.urls, ['https://example.com']);
       expect(model.attachments, ['base64image1']);
       expect(model.selectedCategories.length, 1);
-      expect(model.selectedCategories[0].id,'cat1');
+      expect(model.selectedCategories[0].id, 'cat1');
     });
 
     test('setSelectedCategories() updates selected categories', () {
@@ -50,14 +50,14 @@ void main() {
       model.setSelectedCategories([testCategories[1]]);
 
       expect(model.selectedCategories.length, 1);
-      expect(model.selectedCategories[0].id,'cat2');
+      expect(model.selectedCategories[0].id, 'cat2');
     });
     test('categories getter returns the list of categories', () {
       model.initialize(testAgendaItem, testCategories);
 
       expect(model.categories.length, 2);
-      expect(model.categories[0].id,'cat1');
-      expect(model.categories[1].id,'cat2');
+      expect(model.categories[0].id, 'cat1');
+      expect(model.categories[1].id, 'cat2');
     });
     test('addUrl() adds a new URL', () {
       model.initialize(testAgendaItem, testCategories);
@@ -149,7 +149,7 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const [
+          graphqlErrors: const [
             GraphQLError(message: 'Failed to update agenda item')
           ],
         ),

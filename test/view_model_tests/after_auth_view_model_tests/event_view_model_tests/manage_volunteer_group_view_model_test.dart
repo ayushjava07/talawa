@@ -399,7 +399,9 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const [GraphQLError(message: 'Failed to add volunteer')],
+          graphqlErrors: const [
+            GraphQLError(message: 'Failed to add volunteer')
+          ],
         ),
         options: QueryOptions(
           document: gql(EventQueries().addVolunteerToGroup()),
@@ -487,7 +489,9 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const [GraphQLError(message: 'Failed to delete group')],
+          graphqlErrors: const [
+            GraphQLError(message: 'Failed to delete group')
+          ],
         ),
         options: QueryOptions(
           document: gql(EventQueries().removeEventVolunteerGroup()),
@@ -561,7 +565,9 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const [GraphQLError(message: 'Failed to remove volunteer')],
+          graphqlErrors: const [
+            GraphQLError(message: 'Failed to remove volunteer')
+          ],
         ),
         options: QueryOptions(
           document: gql(EventQueries().removeVolunteerMutation()),
@@ -595,7 +601,9 @@ void main() {
         data: null,
         exception: OperationException(
           linkException: null,
-          graphqlErrors:const [GraphQLError(message: 'Failed to update group')],
+          graphqlErrors: const [
+            GraphQLError(message: 'Failed to update group')
+          ],
         ),
         options: QueryOptions(
           document: gql(EventQueries().updateVolunteerGroupMutation()),
