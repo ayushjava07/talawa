@@ -102,17 +102,24 @@ class ManageVolunteerGroupViewModel extends BaseModel {
       };
       final result =
           await locator<EventService>().addVolunteerToGroup(variables);
-
-      if (result == null || result is! QueryResult || result.data == null) {
-        throw Exception('Failed to add volunteer to group');
+      final queryResult = result as QueryResult?;
+      if (queryResult?.hasException == true) {
+        print(
+            "Error adding volunteer to group: ${queryResult?.exception?.graphqlErrors}");
+        return;
+      }
+      if (queryResult?.data == null ||
+          queryResult?.data!['createEventVolunteer'] == null) {
+        print('Failed to add volunteer to group or no data returned');
+        return;
       }
 
-      final data = result.data!;
-      if (data['createEventVolunteer'] == null) {
+      final data = queryResult?.data;
+      if (data?['createEventVolunteer'] == null) {
         return;
       }
       final addedVolunteerData =
-          data['createEventVolunteer'] as Map<String, dynamic>;
+          data?['createEventVolunteer'] as Map<String, dynamic>;
       final addedVolunteer = EventVolunteer.fromJson(addedVolunteerData);
       _volunteers.add(addedVolunteer);
       notifyListeners();
@@ -135,12 +142,19 @@ class ManageVolunteerGroupViewModel extends BaseModel {
       };
       final result =
           await locator<EventService>().removeVolunteerGroup(variables);
-
-      if (result == null || result is! QueryResult) {
-        throw Exception('Failed to remove volunteer group');
+      final queryResult = result as QueryResult?;
+      if (queryResult?.hasException == true) {
+        print(
+            "Error removing volunteer group: ${queryResult?.exception?.graphqlErrors}");
+        return;
+      }
+      if (queryResult?.data == null ||
+          queryResult?.data!['removeEventVolunteerGroup'] == null) {
+        print('Failed to remove volunteer group or no data returned');
+        return;
       }
 
-      final data = result.data;
+      final data = queryResult?.data;
 
       if (data != null && data['removeEventVolunteerGroup'] != null) {
         notifyListeners();
@@ -164,13 +178,19 @@ class ManageVolunteerGroupViewModel extends BaseModel {
       };
       final result =
           await locator<EventService>().removeVolunteerFromGroup(variables);
-
-      if (result == null || result is! QueryResult) {
+      final queryResult = result as QueryResult?;
+      if (queryResult?.hasException == true) {
+        print(
+            "Error removing volunteer from group: ${queryResult?.exception?.graphqlErrors}");
+        return;
+      }
+      if (queryResult?.data == null ||
+          queryResult?.data!['removeEventVolunteer'] == null) {
         print('Failed to remove volunteer.');
         return;
       }
 
-      final data = result.data;
+      final data = queryResult?.data;
 
       if (data != null && data['removeEventVolunteer'] != null) {
         _volunteers.removeWhere((volunteer) => volunteer.id == volunteerId);
@@ -212,12 +232,19 @@ class ManageVolunteerGroupViewModel extends BaseModel {
     try {
       final result =
           await locator<EventService>().updateVolunteerGroup(variables);
-
-      if (result == null || result is! QueryResult || result.data == null) {
-        throw Exception('Failed to update volunteer group');
+      final queryResult = result as QueryResult?;
+      if (queryResult?.hasException == true) {
+        print(
+            "Error updating volunteer group: ${queryResult?.exception?.graphqlErrors}");
+        return;
+      }
+      if (queryResult?.data == null ||
+          queryResult?.data!['updateEventVolunteerGroup'] == null) {
+        print('Failed to update volunteer group or no data returned');
+        return;
       }
 
-      if (result.data != null) {
+      if (queryResult?.data != null) {
         group.name = name;
         group.volunteersRequired = volunteersRequired;
         notifyListeners();

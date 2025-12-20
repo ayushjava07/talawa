@@ -144,14 +144,26 @@ class EventInfoViewModel extends BaseModel {
       final result =
           await locator<EventService>().createVolunteerGroup(variables);
 
-      if (result == null ||
-          result is! QueryResult ||
-          result.data == null ||
-          result.data!['createEventVolunteerGroup'] == null) {
-        throw Exception('Failed to create volunteer group or no data returned');
+      final queryResult = result as QueryResult?;
+      if (queryResult == null) {
+        print('Failed to create volunteer group or no data returned');
+        return null;
       }
 
-      final data = result.data!['createEventVolunteerGroup'];
+      //check for   GrapQL exceptions first
+      if (queryResult.hasException == true) {
+        print(
+            "Error creating volunteer group: ${queryResult.exception?.graphqlErrors}");
+        return null;
+      }
+
+      if (queryResult.data == null ||
+          queryResult.data!['createEventVolunteerGroup'] == null) {
+        print('Failed to create volunteer group or no data returned');
+        return null;
+      }
+
+      final data = queryResult.data!['createEventVolunteerGroup'];
       final newGroup =
           EventVolunteerGroup.fromJson(data as Map<String, dynamic>);
 
@@ -198,12 +210,25 @@ class EventInfoViewModel extends BaseModel {
       final result = await locator<EventService>()
           .fetchAgendaCategories(userConfig.currentOrg.id!);
 
-      if (result == null || result is! QueryResult || result.data == null) {
+      final queryResult = result as QueryResult?;
+      if (queryResult == null) {
+        print('Failed to fetch categories or no data returned');
+        return;
+      }
+
+      if (queryResult.hasException == true) {
+        print(
+            "Error fetching categories: ${queryResult.exception?.graphqlErrors}");
+        return;
+      }
+
+      if (queryResult.data == null) {
+        print('Failed to fetch categories or no data returned');
         return;
       }
 
       final List categoryJson =
-          result.data!['agendaItemCategoriesByOrganization'] as List;
+          queryResult.data!['agendaItemCategoriesByOrganization'] as List;
       _categories = categoryJson
           .map((json) => AgendaCategory.fromJson(json as Map<String, dynamic>))
           .toList();
@@ -236,12 +261,25 @@ class EventInfoViewModel extends BaseModel {
   Future<void> fetchAgendaItems() async {
     try {
       final result = await locator<EventService>().fetchAgendaItems(event.id!);
+      final queryResult = result as QueryResult?;
 
-      if (result == null || result is! QueryResult || result.data == null) {
+      if (queryResult == null) {
+        print('Failed to fetch agenda items or no data returned');
         return;
       }
 
-      final List agendaJson = result.data!['agendaItemByEvent'] as List;
+      if (queryResult.hasException == true) {
+        print(
+            "Error fetching agenda items: ${queryResult.exception?.graphqlErrors}");
+        return;
+      }
+
+      if (queryResult.data == null) {
+        print('Failed to fetch agenda items or no data returned');
+        return;
+      }
+
+      final List agendaJson = queryResult.data!['agendaItemByEvent'] as List;
       _agendaItems = agendaJson
           .map((json) => EventAgendaItem.fromJson(json as Map<String, dynamic>))
           .toList();
@@ -289,15 +327,25 @@ class EventInfoViewModel extends BaseModel {
         'organizationId': userConfig.currentOrg.id,
       };
       final result = await locator<EventService>().createAgendaItem(variables);
-
-      if (result == null ||
-          result is! QueryResult ||
-          result.data == null ||
-          result.data!['createAgendaItem'] == null) {
-        throw Exception('Failed to create agenda item or no data returned');
+      final queryResult = result as QueryResult?;
+      if (queryResult == null) {
+        print('Failed to create agenda item or no data returned');
+        return null;
       }
 
-      final data = result.data!['createAgendaItem'];
+      if (queryResult.hasException == true) {
+        print(
+            "Error creating agenda item: ${queryResult.exception?.graphqlErrors}");
+        return null;
+      }
+
+      if (queryResult.data == null ||
+          queryResult.data!['createAgendaItem'] == null) {
+        print('Failed to create agenda item or no data returned');
+        return null;
+      }
+
+      final data = queryResult.data!['createAgendaItem'];
 
       final newAgendaItem =
           EventAgendaItem.fromJson(data as Map<String, dynamic>);
@@ -347,13 +395,26 @@ class EventInfoViewModel extends BaseModel {
         itemId,
         {'sequence': newSequence},
       );
+      final queryResult = result as QueryResult?;
+      if (queryResult == null) {
+        print('Failed to update agenda item sequence or no data returned');
+        return;
+      }
 
-      if (result == null || result is! QueryResult || result.data == null) {
-        throw Exception('Failed to update agenda item sequence');
+      if (queryResult.hasException == true) {
+        print(
+            "Error updating agenda item sequence: ${queryResult.exception?.graphqlErrors}");
+        return;
+      }
+
+      if (queryResult.data == null ||
+          queryResult.data!['updateAgendaItem'] == null) {
+        print('Failed to update agenda item sequence or no data returned');
+        return;
       }
 
       final updatedItem = EventAgendaItem.fromJson(
-        result.data!['updateAgendaItem'] as Map<String, dynamic>,
+        queryResult.data!['updateAgendaItem'] as Map<String, dynamic>,
       );
       final index = _agendaItems.indexWhere((item) => item.id == itemId);
       if (index != -1) {
